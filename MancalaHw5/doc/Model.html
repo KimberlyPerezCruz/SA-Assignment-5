@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="includes/diagramstyle.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="includes/dagre.min.js"></script>
+<script src="includes/drawer.js"></script>
+<script src="includes/graph.js"></script>
+</head><body>
+<p>Storyboard <a href='.././src/main/java/net/ulno/sa/Model.java' type='text/x-java'>Model</a></p>
+<p>This is just showing us our class diagram</p>
+<script>
+   var json = {
+   "typ":"class",
+   "nodes":[
+      {
+         "typ":"node",
+         "id":"Player",
+         "attributes":[
+            "name : String",
+            "pebblesHolding : int"
+         ]
+      },
+      {
+         "typ":"node",
+         "id":"Pit",
+         "attributes":[
+            "pebblesIn : int",
+            "isKalah : boolean"
+         ]
+      },
+      {
+         "typ":"node",
+         "id":"Board"
+      }
+   ],
+   "edges":[
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "id":"Player",
+            "cardinality":"many",
+            "property":"pitsIHave"
+         },
+         "target":{
+            "id":"Pit",
+            "cardinality":"many",
+            "property":"playerIBelongTo"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "id":"Player",
+            "cardinality":"one",
+            "property":"boardIBelongTo"
+         },
+         "target":{
+            "id":"Board",
+            "cardinality":"many",
+            "property":"player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "id":"Pit",
+            "cardinality":"many",
+            "property":"oppositeOf"
+         },
+         "target":{
+            "id":"Pit",
+            "cardinality":"many",
+            "property":"oppositeOf"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "id":"Pit",
+            "cardinality":"one",
+            "property":"successor"
+         },
+         "target":{
+            "id":"Pit",
+            "cardinality":"one",
+            "property":"successor"
+         }
+      }
+   ]
+}   ;
+   new Graph(json, {"canvasid":"canvasModelClassDiagram1", "display":"html", fontsize:10, bar:false, propertyinfo:false}).layout(100,100);
+</script>
+<p>No methods are actually specified</p>
+
+</body>
+</html>
