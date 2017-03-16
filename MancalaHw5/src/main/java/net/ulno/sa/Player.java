@@ -378,7 +378,8 @@ import net.ulno.sa.Board;
    {
 //      Board value = new Board();
       withPlayer(board);
-      // Same implementation as hw4 made it work for this version.
+
+      // Same implementation as hw4 made it work for this version. This creates the pits.
       this.name = name;
       this.pebblesHolding = 0;
       this.pitsIHave = new PitSet();
@@ -398,7 +399,6 @@ import net.ulno.sa.Board;
          if(i>0 && i<7){
             this.pitsIHave.get(i-1).setSuccessor(this.pitsIHave.last());
          }
-
       }
 
       return board;

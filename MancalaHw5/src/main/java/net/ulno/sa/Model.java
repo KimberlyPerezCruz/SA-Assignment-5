@@ -35,12 +35,11 @@ public class Model {
                 new Parameter(DataType.INT).with("curLocation"));
         boardClass.withMethod("ReDistributeCounterclockwise",DataType.VOID,
                 new Parameter(pitClass).with("src"),
-                new Parameter(DataType.INT).with("pebbles"),
-                new Parameter(pitClass).with("opponent"));
-
+                new Parameter(playerClass).with("currentPlayer"),
+                new Parameter(playerClass).with("otherPlayer"));
         //university.withBidirectional(student, "student", Cardinality.MANY,"almaMater",Cardinality.ONE);
         playerClass.withBidirectional(pitClass,"playerIBelongTo",Cardinality.MANY,"pitsIHave",Cardinality.MANY);
-//        playerClass.withBidirectional(boardClass,"player",Cardinality.MANY,"boardIBelongTo",Cardinality.ONE);
+
         boardClass.withBidirectional(playerClass,"boardIBelongTo",Cardinality.ONE,"player",Cardinality.MANY);
 
         pitClass.withBidirectional(pitClass,"oppositeOf",Cardinality.MANY,"oppositeOf",Cardinality.MANY);

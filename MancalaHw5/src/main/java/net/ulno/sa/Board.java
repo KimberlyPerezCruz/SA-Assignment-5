@@ -172,8 +172,12 @@ import net.ulno.sa.Player;
        else return false;
    }
 
-    public void ReDistributeCounterclockwise(Pit src, int pebbles, Pit opponents){
+    public void ReDistributeCounterclockwise(Pit src, Player currentPlayer, Player otherPlayer){
        // Same implementation as hw4 just made work for this version.
+       //**I am having problems because tem.getPlayerIBelongTo() is null and I haven't figure out how to set it.
+
+
+        int pebbles = src.getPebblesIn();
         int i = 0;
         int p = 0;
 
@@ -181,11 +185,17 @@ import net.ulno.sa.Player;
         src.setPebblesIn(0);
         while(i<pebbles){
 //            temp.toString();
+
+            // If this happens we need to start from start of other player's pits
+            if(temp.isIsKalah() && temp.getPlayerIBelongTo().equals(currentPlayer))
+                temp =  otherPlayer.getPitsIHave().get(0);// Next that follows its otherPlayer's pit.
+            // If this happens we need to start from start of current player's pits
+            else if(temp.isIsKalah() && temp.getPlayerIBelongTo().equals(otherPlayer))
+                temp =  currentPlayer.getPitsIHave().get(0);// Next that follows its currentPlayer's pit.
+
             p = temp.getPebblesIn();
             temp.setPebblesIn(p+1);
             temp = temp.getSuccessor();
-            if(temp!=null && temp.isIsKalah())
-               temp =  opponents;// Next that follows it opponents pit.
             i++;
         }
     }

@@ -211,4 +211,12 @@ public class BoardSet extends SimpleSet<Board>
       return BoardSet.EMPTY_SET;
    }
 
+   
+   //==========================================================================
+   
+   public BoardSet ReDistributeCounterclockwise(Pit src, Player currentPlayer, Player otherPlayer)
+   {
+      return BoardSet.EMPTY_SET;
+   }
+
 }

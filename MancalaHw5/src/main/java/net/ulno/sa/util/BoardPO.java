@@ -95,11 +95,11 @@ public class BoardPO extends PatternObject<BoardPO, Board>
    
    //==========================================================================
    
-   public void ReDistributeCounterclockwise(Pit src, int pebbles, Pit opponent)
+   public void ReDistributeCounterclockwise(Pit src,  Player currentPlayer, Player otherPlayer)
    {
       if (this.getPattern().getHasMatch())
       {
-          ((Board) getCurrentMatch()).ReDistributeCounterclockwise(src, pebbles, opponent);
+          ((Board) getCurrentMatch()).ReDistributeCounterclockwise(src, currentPlayer, otherPlayer);
       }
    }
 

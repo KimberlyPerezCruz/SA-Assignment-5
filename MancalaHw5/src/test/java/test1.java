@@ -33,13 +33,13 @@ public class test1 {
         p2.createPlayer(board);
         p2.withPlayer(board);
 
-        int p1PebblesinKalah = p1.getPitsIHave().get(6).getPebblesIn();
-        int p2Pebblesinfifth = p1.getPitsIHave().get(5).getPebblesIn();
+        p1.createPlayer();
 
-        board.ReDistributeCounterclockwise(p1.getPitsIHave().get(5),
-                p1.getPitsIHave().get(5).getPebblesIn(),
-                p2.getPitsIHave().get(0));
+        //Having trouble here...
+        board.ReDistributeCounterclockwise(p1.getPitsIHave().get(5), p1, p2);
+
         assert(p1.getPitsIHave().get(5).getPebblesIn() == 0);// Position 5 of Sal's Pit has no pebbles now.
+
         // All pits counterclockwise after this one up to 4 have one extra pebbles (5 pebbles because this is first move).
         for(int i=3; i<=0; i++)// From Ash's last pit to pit 3, they have one more pebble.
             assert(p2.getPitsIHave().get(5).getPebblesIn() == 5);
