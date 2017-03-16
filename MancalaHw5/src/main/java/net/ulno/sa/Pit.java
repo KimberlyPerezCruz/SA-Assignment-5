@@ -27,7 +27,8 @@ import java.beans.PropertyChangeListener;
 import net.ulno.sa.util.PlayerSet;
 import net.ulno.sa.Player;
 import net.ulno.sa.util.PitSet;
-   /**
+
+/**
     * 
     * @see <a href='../../../../../../src/main/java/net/ulno/sa/Model.java'>Model.java</a>
  */
@@ -80,6 +81,9 @@ import net.ulno.sa.util.PitSet;
    	return true;
    }
 
+
+
+
    
    //==========================================================================
    
@@ -87,7 +91,6 @@ import net.ulno.sa.util.PitSet;
    public void removeYou()
    {
       withoutPlayerIBelongTo(this.getPlayerIBelongTo().toArray(new Player[this.getPlayerIBelongTo().size()]));
-      withoutPitsIHave(this.getPitsIHave().toArray(new Player[this.getPitsIHave().size()]));
       withoutOppositeOf(this.getOppositeOf().toArray(new Pit[this.getOppositeOf().size()]));
       setSuccessor(null);
       firePropertyChange("REMOVE_YOU", this, null);
@@ -236,78 +239,6 @@ import net.ulno.sa.util.PitSet;
    /********************************************************************
     * <pre>
     *              many                       many
-    * Pit ----------------------------------- Player
-    *              playerIBelongTo                   pitsIHave
-    * </pre>
-    */
-   
-   public static final String PROPERTY_PITSIHAVE = "pitsIHave";
-
-   private PlayerSet pitsIHave = null;
-   
-   public PlayerSet getPitsIHave()
-   {
-      if (this.pitsIHave == null)
-      {
-         return PlayerSet.EMPTY_SET;
-      }
-   
-      return this.pitsIHave;
-   }
-
-   public Pit withPitsIHave(Player... value)
-   {
-      if(value==null){
-         return this;
-      }
-      for (Player item : value)
-      {
-         if (item != null)
-         {
-            if (this.pitsIHave == null)
-            {
-               this.pitsIHave = new PlayerSet();
-            }
-            
-            boolean changed = this.pitsIHave.add (item);
-
-            if (changed)
-            {
-               item.withPlayerIBelongTo(this);
-               firePropertyChange(PROPERTY_PITSIHAVE, null, item);
-            }
-         }
-      }
-      return this;
-   } 
-
-   public Pit withoutPitsIHave(Player... value)
-   {
-      for (Player item : value)
-      {
-         if ((this.pitsIHave != null) && (item != null))
-         {
-            if (this.pitsIHave.remove(item))
-            {
-               item.withoutPlayerIBelongTo(this);
-               firePropertyChange(PROPERTY_PITSIHAVE, item, null);
-            }
-         }
-      }
-      return this;
-   }
-
-   public Player createPitsIHave()
-   {
-      Player value = new Player();
-      withPitsIHave(value);
-      return value;
-   } 
-
-   
-   /********************************************************************
-    * <pre>
-    *              many                       many
     * Pit ----------------------------------- Pit
     *              oppositeOf                   oppositeOf
     * </pre>
@@ -421,11 +352,11 @@ import net.ulno.sa.util.PitSet;
          }
          
          this.successor = value;
-         
-         if (value != null)
-         {
+
+//         if (value != null)
+//         {
 //            value.withSuccessor(this);
-         }
+//         }
          
          firePropertyChange(PROPERTY_SUCCESSOR, oldValue, value);
          changed = true;

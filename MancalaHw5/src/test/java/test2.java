@@ -28,29 +28,35 @@ public class test2 {
 
         //Setting both players with same board.
         Board board = new Board();
+        board = board.withPlayers(p1,p2);//This is what actually set them together.
         p1.createPlayer(board);
-        p1.withPlayer(board);
+        p1.withBoard(board);
         p2.createPlayer(board);
-        p2.withPlayer(board);
+        p2.withBoard(board);
+
 
         //Pre-Condition
         p1.getPitsIHave().get(5).setPebblesIn(0);
 
+        // Making the move
         int p1PebblesinKalah = p1.getPitsIHave().get(6).getPebblesIn();
         int p2Pebblesinfifth = p2.getPitsIHave().get(5).getPebblesIn();
         board.takeOppositePebbles(p1, p2, 5);
+
+        //Asserting post-conditions.
         assert(p1.getPitsIHave().get(5).getPebblesIn() == 0);// Position 5 of Sal's Pit has no pebbles now.
         // Sal's Kalah has more now.
         assert(p1.getPitsIHave().get(6).getPebblesIn() == p1PebblesinKalah+p2Pebblesinfifth+1);
         assert(p2.getPitsIHave().get(6).getPebblesIn() == 0);// Position 5 of Ash's pit has not pebbles.
 
 
-        storyboard.add("Test one Scenario:\n" +
+        //Making object diagram
+        storyboard.add("Test Two Scenario:\n" +
                 "     \nPre-condition: Players already made a move, this is 1st player first move.\n" +
                 "     \nPost-condition: First player's Kalah has more pebbles.\n" +
-                "     Player Sal's last pebble fell in an empty pit, so Sal takes pebbles from opposite pit, which is Ash's pit.\n" +
-                "     Now Sal's fifth pit has zero pebbles and his Kalah has all of Ash's fifth pit pebbles and the last one he\n" +
-                "     dropped on empty pit.");
+                "     \nPlayer Sal's last pebble fell in an empty pit, so Sal takes pebbles from opposite pit, which is Ash's pit.\n" +
+                "     \nNow Sal's fifth pit has zero pebbles and his Kalah has all of Ash's fifth pit pebbles and the last one he\n" +
+                "     \ndropped on empty pit.");
         storyboard.addObjectDiagram("Sal", p1, "Ash", p2, "board", board);
         storyboard.dumpHTML();
     }

@@ -17,9 +17,12 @@
 Pre-condition: Players already made a move, this is 1st player first move.
      
 Post-condition: First player's Kalah has more pebbles.
-     Player Sal's last pebble fell in an empty pit, so Sal takes pebbles from opposite pit, which is Ash's pit.
-     Now Sal's fifth pit has zero pebbles and his Kalah has all of Ash's fifth pit pebbles and the last one he
-     dropped on empty pit.</p>
+     
+Player Sal's last pebble fell in an empty pit, so Sal takes pebbles from opposite pit, which is Ash's pit.
+     
+Now Sal's fifth pit has zero pebbles and his Kalah has all of Ash's fifth pit pebbles and the last one he
+     
+dropped on empty pit.</p>
 <script>
    var json = {
    "typ":"objectdiagram",
@@ -90,6 +93,10 @@ Post-condition: First player's Kalah has more pebbles.
       },
       {
          "typ":"clazz",
+         "id":"board : Board"
+      },
+      {
+         "typ":"clazz",
          "id":"Ash : Player",
          "attributes":[
             "name=Ash",
@@ -151,10 +158,6 @@ Post-condition: First player's Kalah has more pebbles.
             "pebblesIn=0",
             "isKalah=true"
          ]
-      },
-      {
-         "typ":"clazz",
-         "id":"board : Board"
       }
    ],
    "edges":[
@@ -250,6 +253,19 @@ Post-condition: First player's Kalah has more pebbles.
          }
       },
       {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"one",
+            "property":"board",
+            "id":"board : Board"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"players",
+            "id":"Sal : Player"
+         }
+      },
+      {
          "typ":"UNDIRECTIONAL",
          "source":{
             "cardinality":"one",
@@ -325,6 +341,19 @@ Post-condition: First player's Kalah has more pebbles.
             "cardinality":"one",
             "property":"pit",
             "id":"P6 : Pit"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"players",
+            "id":"Ash : Player"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"board",
+            "id":"board : Board"
          }
       },
       {
@@ -415,19 +444,6 @@ Post-condition: First player's Kalah has more pebbles.
          "target":{
             "cardinality":"one",
             "property":"player",
-            "id":"Ash : Player"
-         }
-      },
-      {
-         "typ":"ASSOCIATION",
-         "source":{
-            "cardinality":"many",
-            "property":"player",
-            "id":"board : Board"
-         },
-         "target":{
-            "cardinality":"one",
-            "property":"boardIBelongTo",
             "id":"Ash : Player"
          }
       },

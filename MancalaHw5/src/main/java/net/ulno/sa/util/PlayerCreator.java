@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2017 Salonika
+   Copyright (c) 2017 kimberly_93pc
    
    Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
    and associated documentation files (the "Software"), to deal in the Software without restriction, 
@@ -34,8 +34,7 @@ public class PlayerCreator implements SendableEntityCreator
       Player.PROPERTY_NAME,
       Player.PROPERTY_PEBBLESHOLDING,
       Player.PROPERTY_PITSIHAVE,
-      Player.PROPERTY_PLAYERIBELONGTO,
-      Player.PROPERTY_PLAYER,
+      Player.PROPERTY_BOARD,
    };
    
    @Override
@@ -76,14 +75,9 @@ public class PlayerCreator implements SendableEntityCreator
          return ((Player) target).getPitsIHave();
       }
 
-      if (Player.PROPERTY_PLAYERIBELONGTO.equalsIgnoreCase(attribute))
+      if (Player.PROPERTY_BOARD.equalsIgnoreCase(attribute))
       {
-         return ((Player) target).getPlayerIBelongTo();
-      }
-
-      if (Player.PROPERTY_PLAYER.equalsIgnoreCase(attribute))
-      {
-         return ((Player) target).getPlayer();
+         return ((Player) target).getBoard();
       }
       
       return null;
@@ -121,27 +115,9 @@ public class PlayerCreator implements SendableEntityCreator
          return true;
       }
 
-      if (Player.PROPERTY_PLAYERIBELONGTO.equalsIgnoreCase(attrName))
+      if (Player.PROPERTY_BOARD.equalsIgnoreCase(attrName))
       {
-         ((Player) target).withPlayerIBelongTo((Pit) value);
-         return true;
-      }
-      
-      if ((Player.PROPERTY_PLAYERIBELONGTO + SendableEntityCreator.REMOVE).equalsIgnoreCase(attrName))
-      {
-         ((Player) target).withoutPlayerIBelongTo((Pit) value);
-         return true;
-      }
-
-      if (Player.PROPERTY_PLAYER.equalsIgnoreCase(attrName))
-      {
-         ((Player) target).withPlayer((Board) value);
-         return true;
-      }
-      
-      if ((Player.PROPERTY_PLAYER + SendableEntityCreator.REMOVE).equalsIgnoreCase(attrName))
-      {
-         ((Player) target).withoutPlayer((Board) value);
+         ((Player) target).setBoard((Board) value);
          return true;
       }
       

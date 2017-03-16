@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2017 Salonika
+   Copyright (c) 2017 kimberly_93pc
    
    Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
    and associated documentation files (the "Software"), to deal in the Software without restriction, 
@@ -33,7 +33,6 @@ public class PitCreator implements SendableEntityCreator
       Pit.PROPERTY_PEBBLESIN,
       Pit.PROPERTY_ISKALAH,
       Pit.PROPERTY_PLAYERIBELONGTO,
-      Pit.PROPERTY_PITSIHAVE,
       Pit.PROPERTY_OPPOSITEOF,
       Pit.PROPERTY_SUCCESSOR,
    };
@@ -74,11 +73,6 @@ public class PitCreator implements SendableEntityCreator
       if (Pit.PROPERTY_PLAYERIBELONGTO.equalsIgnoreCase(attribute))
       {
          return ((Pit) target).getPlayerIBelongTo();
-      }
-
-      if (Pit.PROPERTY_PITSIHAVE.equalsIgnoreCase(attribute))
-      {
-         return ((Pit) target).getPitsIHave();
       }
 
       if (Pit.PROPERTY_OPPOSITEOF.equalsIgnoreCase(attribute))
@@ -123,18 +117,6 @@ public class PitCreator implements SendableEntityCreator
       if ((Pit.PROPERTY_PLAYERIBELONGTO + SendableEntityCreator.REMOVE).equalsIgnoreCase(attrName))
       {
          ((Pit) target).withoutPlayerIBelongTo((Player) value);
-         return true;
-      }
-
-      if (Pit.PROPERTY_PITSIHAVE.equalsIgnoreCase(attrName))
-      {
-         ((Pit) target).withPitsIHave((Player) value);
-         return true;
-      }
-      
-      if ((Pit.PROPERTY_PITSIHAVE + SendableEntityCreator.REMOVE).equalsIgnoreCase(attrName))
-      {
-         ((Pit) target).withoutPitsIHave((Player) value);
          return true;
       }
 

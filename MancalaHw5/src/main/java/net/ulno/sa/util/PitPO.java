@@ -191,45 +191,6 @@ public class PitPO extends PatternObject<PitPO, Pit>
       return null;
    }
 
-   public PlayerPO createPitsIHavePO()
-   {
-      PlayerPO result = new PlayerPO(new Player[]{});
-      
-      result.setModifier(this.getPattern().getModifier());
-      super.hasLink(Pit.PROPERTY_PITSIHAVE, result);
-      
-      return result;
-   }
-
-   public PlayerPO createPitsIHavePO(String modifier)
-   {
-      PlayerPO result = new PlayerPO(new Player[]{});
-      
-      result.setModifier(modifier);
-      super.hasLink(Pit.PROPERTY_PITSIHAVE, result);
-      
-      return result;
-   }
-
-   public PitPO createPitsIHaveLink(PlayerPO tgt)
-   {
-      return hasLinkConstraint(tgt, Pit.PROPERTY_PITSIHAVE);
-   }
-
-   public PitPO createPitsIHaveLink(PlayerPO tgt, String modifier)
-   {
-      return hasLinkConstraint(tgt, Pit.PROPERTY_PITSIHAVE, modifier);
-   }
-
-   public PlayerSet getPitsIHave()
-   {
-      if (this.getPattern().getHasMatch())
-      {
-         return ((Pit) this.getCurrentMatch()).getPitsIHave();
-      }
-      return null;
-   }
-
    public PitPO createOppositeOfPO()
    {
       PitPO result = new PitPO(new Pit[]{});

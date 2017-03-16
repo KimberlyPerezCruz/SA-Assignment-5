@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2017 Salonika
+   Copyright (c) 2017 kimberly_93pc
    
    Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
    and associated documentation files (the "Software"), to deal in the Software without restriction, 
@@ -327,86 +327,6 @@ public class PitSet extends SimpleSet<Pit>
       for (Pit obj : this)
       {
          obj.withoutPlayerIBelongTo(value);
-      }
-      
-      return this;
-   }
-
-   /**
-    * Loop through the current set of Pit objects and collect a set of the Player objects reached via pitsIHave. 
-    * 
-    * @return Set of Player objects reachable via pitsIHave
-    */
-   public PlayerSet getPitsIHave()
-   {
-      PlayerSet result = new PlayerSet();
-      
-      for (Pit obj : this)
-      {
-         result.with(obj.getPitsIHave());
-      }
-      
-      return result;
-   }
-
-   /**
-    * Loop through the current set of Pit objects and collect all contained objects with reference pitsIHave pointing to the object passed as parameter. 
-    * 
-    * @param value The object required as pitsIHave neighbor of the collected results. 
-    * 
-    * @return Set of Player objects referring to value via pitsIHave
-    */
-   public PitSet filterPitsIHave(Object value)
-   {
-      ObjectSet neighbors = new ObjectSet();
-
-      if (value instanceof Collection)
-      {
-         neighbors.addAll((Collection<?>) value);
-      }
-      else
-      {
-         neighbors.add(value);
-      }
-      
-      PitSet answer = new PitSet();
-      
-      for (Pit obj : this)
-      {
-         if ( ! Collections.disjoint(neighbors, obj.getPitsIHave()))
-         {
-            answer.add(obj);
-         }
-      }
-      
-      return answer;
-   }
-
-   /**
-    * Loop through current set of ModelType objects and attach the Pit object passed as parameter to the PitsIHave attribute of each of it. 
-    * 
-    * @return The original set of ModelType objects now with the new neighbor attached to their PitsIHave attributes.
-    */
-   public PitSet withPitsIHave(Player value)
-   {
-      for (Pit obj : this)
-      {
-         obj.withPitsIHave(value);
-      }
-      
-      return this;
-   }
-
-   /**
-    * Loop through current set of ModelType objects and remove the Pit object passed as parameter from the PitsIHave attribute of each of it. 
-    * 
-    * @return The original set of ModelType objects now without the old neighbor.
-    */
-   public PitSet withoutPitsIHave(Player value)
-   {
-      for (Pit obj : this)
-      {
-         obj.withoutPitsIHave(value);
       }
       
       return this;

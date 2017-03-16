@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2017 Salonika
+   Copyright (c) 2017 kimberly_93pc
    
    Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
    and associated documentation files (the "Software"), to deal in the Software without restriction, 
@@ -357,110 +357,30 @@ public class PlayerSet extends SimpleSet<Player>
    }
 
    /**
-    * Loop through the current set of Player objects and collect a set of the Pit objects reached via playerIBelongTo. 
+    * Loop through the current set of Player objects and collect a set of the Board objects reached via board. 
     * 
-    * @return Set of Pit objects reachable via playerIBelongTo
+    * @return Set of Board objects reachable via board
     */
-   public PitSet getPlayerIBelongTo()
-   {
-      PitSet result = new PitSet();
-      
-      for (Player obj : this)
-      {
-         result.with(obj.getPlayerIBelongTo());
-      }
-      
-      return result;
-   }
-
-   /**
-    * Loop through the current set of Player objects and collect all contained objects with reference playerIBelongTo pointing to the object passed as parameter. 
-    * 
-    * @param value The object required as playerIBelongTo neighbor of the collected results. 
-    * 
-    * @return Set of Pit objects referring to value via playerIBelongTo
-    */
-   public PlayerSet filterPlayerIBelongTo(Object value)
-   {
-      ObjectSet neighbors = new ObjectSet();
-
-      if (value instanceof Collection)
-      {
-         neighbors.addAll((Collection<?>) value);
-      }
-      else
-      {
-         neighbors.add(value);
-      }
-      
-      PlayerSet answer = new PlayerSet();
-      
-      for (Player obj : this)
-      {
-         if ( ! Collections.disjoint(neighbors, obj.getPlayerIBelongTo()))
-         {
-            answer.add(obj);
-         }
-      }
-      
-      return answer;
-   }
-
-   /**
-    * Loop through current set of ModelType objects and attach the Player object passed as parameter to the PlayerIBelongTo attribute of each of it. 
-    * 
-    * @return The original set of ModelType objects now with the new neighbor attached to their PlayerIBelongTo attributes.
-    */
-   public PlayerSet withPlayerIBelongTo(Pit value)
-   {
-      for (Player obj : this)
-      {
-         obj.withPlayerIBelongTo(value);
-      }
-      
-      return this;
-   }
-
-   /**
-    * Loop through current set of ModelType objects and remove the Player object passed as parameter from the PlayerIBelongTo attribute of each of it. 
-    * 
-    * @return The original set of ModelType objects now without the old neighbor.
-    */
-   public PlayerSet withoutPlayerIBelongTo(Pit value)
-   {
-      for (Player obj : this)
-      {
-         obj.withoutPlayerIBelongTo(value);
-      }
-      
-      return this;
-   }
-
-   /**
-    * Loop through the current set of Player objects and collect a set of the Board objects reached via player. 
-    * 
-    * @return Set of Board objects reachable via player
-    */
-   public BoardSet getPlayer()
+   public BoardSet getBoard()
    {
       BoardSet result = new BoardSet();
       
       for (Player obj : this)
       {
-         result.with(obj.getPlayer());
+         result.with(obj.getBoard());
       }
       
       return result;
    }
 
    /**
-    * Loop through the current set of Player objects and collect all contained objects with reference player pointing to the object passed as parameter. 
+    * Loop through the current set of Player objects and collect all contained objects with reference board pointing to the object passed as parameter. 
     * 
-    * @param value The object required as player neighbor of the collected results. 
+    * @param value The object required as board neighbor of the collected results. 
     * 
-    * @return Set of Board objects referring to value via player
+    * @return Set of Board objects referring to value via board
     */
-   public PlayerSet filterPlayer(Object value)
+   public PlayerSet filterBoard(Object value)
    {
       ObjectSet neighbors = new ObjectSet();
 
@@ -477,7 +397,7 @@ public class PlayerSet extends SimpleSet<Player>
       
       for (Player obj : this)
       {
-         if ( ! Collections.disjoint(neighbors, obj.getPlayer()))
+         if (neighbors.contains(obj.getBoard()) || (neighbors.isEmpty() && obj.getBoard() == null))
          {
             answer.add(obj);
          }
@@ -487,30 +407,15 @@ public class PlayerSet extends SimpleSet<Player>
    }
 
    /**
-    * Loop through current set of ModelType objects and attach the Player object passed as parameter to the Player attribute of each of it. 
+    * Loop through current set of ModelType objects and attach the Player object passed as parameter to the Board attribute of each of it. 
     * 
-    * @return The original set of ModelType objects now with the new neighbor attached to their Player attributes.
+    * @return The original set of ModelType objects now with the new neighbor attached to their Board attributes.
     */
-   public PlayerSet withPlayer(Board value)
+   public PlayerSet withBoard(Board value)
    {
       for (Player obj : this)
       {
-         obj.withPlayer(value);
-      }
-      
-      return this;
-   }
-
-   /**
-    * Loop through current set of ModelType objects and remove the Player object passed as parameter from the Player attribute of each of it. 
-    * 
-    * @return The original set of ModelType objects now without the old neighbor.
-    */
-   public PlayerSet withoutPlayer(Board value)
-   {
-      for (Player obj : this)
-      {
-         obj.withoutPlayer(value);
+         obj.withBoard(value);
       }
       
       return this;

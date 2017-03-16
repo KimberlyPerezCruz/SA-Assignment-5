@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2017 Salonika
+   Copyright (c) 2017 kimberly_93pc
    
    Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
    and associated documentation files (the "Software"), to deal in the Software without restriction, 
@@ -30,7 +30,7 @@ public class BoardCreator implements SendableEntityCreator
 {
    private final String[] properties = new String[]
    {
-      Board.PROPERTY_BOARDIBELONGTO,
+      Board.PROPERTY_PLAYERS,
    };
    
    @Override
@@ -56,9 +56,9 @@ public class BoardCreator implements SendableEntityCreator
          attribute = attrName.substring(0, pos);
       }
 
-      if (Board.PROPERTY_BOARDIBELONGTO.equalsIgnoreCase(attribute))
+      if (Board.PROPERTY_PLAYERS.equalsIgnoreCase(attribute))
       {
-         return ((Board) target).getBoardIBelongTo();
+         return ((Board) target).getPlayers();
       }
       
       return null;
@@ -72,9 +72,15 @@ public class BoardCreator implements SendableEntityCreator
          attrName = attrName + type;
       }
 
-      if (Board.PROPERTY_BOARDIBELONGTO.equalsIgnoreCase(attrName))
+      if (Board.PROPERTY_PLAYERS.equalsIgnoreCase(attrName))
       {
-         ((Board) target).setBoardIBelongTo((Player) value);
+         ((Board) target).withPlayers((Player) value);
+         return true;
+      }
+      
+      if ((Board.PROPERTY_PLAYERS + SendableEntityCreator.REMOVE).equalsIgnoreCase(attrName))
+      {
+         ((Board) target).withoutPlayers((Player) value);
          return true;
       }
       

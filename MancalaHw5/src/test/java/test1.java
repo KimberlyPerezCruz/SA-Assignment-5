@@ -28,14 +28,13 @@ public class test1 {
 
         //Setting both players with same board.
         Board board = new Board();
+        board = board.withPlayers(p1,p2);//This is what actually set them together.
         p1.createPlayer(board);
-        p1.withPlayer(board);
+        p1.withBoard(board);
         p2.createPlayer(board);
-        p2.withPlayer(board);
+        p2.withBoard(board);
 
-        p1.createPlayer();
 
-        //Having trouble here...
         board.ReDistributeCounterclockwise(p1.getPitsIHave().get(5), p1, p2);
 
         assert(p1.getPitsIHave().get(5).getPebblesIn() == 0);// Position 5 of Sal's Pit has no pebbles now.

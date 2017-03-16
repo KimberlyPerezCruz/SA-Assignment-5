@@ -48,25 +48,25 @@
          "source":{
             "id":"Player",
             "cardinality":"many",
-            "property":"pitsIHave"
+            "property":"playerIBelongTo"
          },
          "target":{
             "id":"Pit",
             "cardinality":"many",
-            "property":"playerIBelongTo"
+            "property":"pitsIHave"
          }
       },
       {
          "typ":"ASSOCIATION",
          "source":{
             "id":"Player",
-            "cardinality":"one",
-            "property":"boardIBelongTo"
+            "cardinality":"many",
+            "property":"players"
          },
          "target":{
             "id":"Board",
-            "cardinality":"many",
-            "property":"player"
+            "cardinality":"one",
+            "property":"board"
          }
       },
       {

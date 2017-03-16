@@ -24,8 +24,10 @@ package net.ulno.sa;
 import de.uniks.networkparser.interfaces.SendableEntity;
 import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeListener;
+import net.ulno.sa.util.PlayerSet;
 import net.ulno.sa.Player;
-   /**
+
+/**
     *
     * @see <a href='../../../../../../src/main/java/net/ulno/sa/Model.java'>Model.java</a>
  */
@@ -82,70 +84,7 @@ import net.ulno.sa.Player;
    //==========================================================================
 
 
-   public void removeYou()
-   {
-      setBoardIBelongTo(null);
-      firePropertyChange("REMOVE_YOU", this, null);
-   }
 
-
-   /********************************************************************
-    * <pre>
-    *              many                       one
-    * Board ----------------------------------- Player
-    *              player                   boardIBelongTo
-    * </pre>
-    */
-
-   public static final String PROPERTY_BOARDIBELONGTO = "boardIBelongTo";
-
-   private Player boardIBelongTo = null;
-
-   public Player getBoardIBelongTo()
-   {
-      return this.boardIBelongTo;
-   }
-
-   public boolean setBoardIBelongTo(Player value)
-   {
-      boolean changed = false;
-
-      if (this.boardIBelongTo != value)
-      {
-         Player oldValue = this.boardIBelongTo;
-
-         if (this.boardIBelongTo != null)
-         {
-            this.boardIBelongTo = null;
-            oldValue.withoutPlayer(this);
-         }
-
-         this.boardIBelongTo = value;
-
-         if (value != null)
-         {
-            value.withPlayer(this);
-         }
-
-         firePropertyChange(PROPERTY_BOARDIBELONGTO, oldValue, value);
-         changed = true;
-      }
-
-      return changed;
-   }
-
-   public Board withBoardIBelongTo(Player value)
-   {
-      setBoardIBelongTo(value);
-      return this;
-   }
-
-   public Player createBoardIBelongTo()
-   {
-      Player value = new Player();
-      withBoardIBelongTo(value);
-      return value;
-   }
 
 
    //==========================================================================
@@ -170,6 +109,7 @@ import net.ulno.sa.Player;
            return true;
        }
        else return false;
+//       return false;
    }
 
     public void ReDistributeCounterclockwise(Pit src, Player currentPlayer, Player otherPlayer){
@@ -199,4 +139,88 @@ import net.ulno.sa.Player;
             i++;
         }
     }
+
+
+
+   
+   //==========================================================================
+   
+   
+   public void removeYou()
+   {
+      withoutPlayers(this.getPlayers().toArray(new Player[this.getPlayers().size()]));
+      firePropertyChange("REMOVE_YOU", this, null);
+   }
+
+   
+   /********************************************************************
+    * <pre>
+    *              one                       many
+    * Board ----------------------------------- Player
+    *              board                   players
+    * </pre>
+    */
+   
+   public static final String PROPERTY_PLAYERS = "players";
+
+   private PlayerSet players = null;
+   
+   public PlayerSet getPlayers()
+   {
+      if (this.players == null)
+      {
+         return PlayerSet.EMPTY_SET;
+      }
+   
+      return this.players;
+   }
+
+   public Board withPlayers(Player... value)
+   {
+      if(value==null){
+         return this;
+      }
+      for (Player item : value)
+      {
+         if (item != null)
+         {
+            if (this.players == null)
+            {
+               this.players = new PlayerSet();
+            }
+            
+            boolean changed = this.players.add (item);
+
+            if (changed)
+            {
+               item.withBoard(this);
+               firePropertyChange(PROPERTY_PLAYERS, null, item);
+            }
+         }
+      }
+      return this;
+   } 
+
+   public Board withoutPlayers(Player... value)
+   {
+      for (Player item : value)
+      {
+         if ((this.players != null) && (item != null))
+         {
+            if (this.players.remove(item))
+            {
+               item.setBoard(null);
+               firePropertyChange(PROPERTY_PLAYERS, item, null);
+            }
+         }
+      }
+      return this;
+   }
+
+   public Player createPlayers()
+   {
+      Player value = new Player();
+      withPlayers(value);
+      return value;
+   } 
 }

@@ -2,10 +2,11 @@ package net.ulno.sa.util;
 
 import org.sdmlib.models.pattern.PatternObject;
 import net.ulno.sa.Board;
-import net.ulno.sa.util.PlayerPO;
 import net.ulno.sa.Player;
-import net.ulno.sa.util.BoardPO;
 import net.ulno.sa.Pit;
+import net.ulno.sa.util.PlayerPO;
+import net.ulno.sa.util.BoardPO;
+import net.ulno.sa.util.PlayerSet;
 
 public class BoardPO extends PatternObject<BoardPO, Board>
 {
@@ -42,65 +43,66 @@ public class BoardPO extends PatternObject<BoardPO, Board>
    {
       this.setModifier(modifier);
    }
-   public PlayerPO createBoardIBelongToPO()
-   {
-      PlayerPO result = new PlayerPO(new Player[]{});
-      
-      result.setModifier(this.getPattern().getModifier());
-      super.hasLink(Board.PROPERTY_BOARDIBELONGTO, result);
-      
-      return result;
-   }
-
-   public PlayerPO createBoardIBelongToPO(String modifier)
-   {
-      PlayerPO result = new PlayerPO(new Player[]{});
-      
-      result.setModifier(modifier);
-      super.hasLink(Board.PROPERTY_BOARDIBELONGTO, result);
-      
-      return result;
-   }
-
-   public BoardPO createBoardIBelongToLink(PlayerPO tgt)
-   {
-      return hasLinkConstraint(tgt, Board.PROPERTY_BOARDIBELONGTO);
-   }
-
-   public BoardPO createBoardIBelongToLink(PlayerPO tgt, String modifier)
-   {
-      return hasLinkConstraint(tgt, Board.PROPERTY_BOARDIBELONGTO, modifier);
-   }
-
-   public Player getBoardIBelongTo()
+   
+   //==========================================================================
+   
+   public boolean takeOppositePebbles(Player movingPlayer, Player otherPlayer, int curLocation)
    {
       if (this.getPattern().getHasMatch())
       {
-         return ((Board) this.getCurrentMatch()).getBoardIBelongTo();
+         return ((Board) getCurrentMatch()).takeOppositePebbles(movingPlayer, otherPlayer, curLocation);
       }
-      return null;
+      return false;
    }
 
    
    //==========================================================================
    
-   public void takeOppositePebbles(Player movingPlayer,Player otherPlayer, int curLocation)
-   {
-      if (this.getPattern().getHasMatch())
-      {
-          ((Board) getCurrentMatch()).takeOppositePebbles(movingPlayer, otherPlayer, curLocation);
-      }
-   }
-
-   
-   //==========================================================================
-   
-   public void ReDistributeCounterclockwise(Pit src,  Player currentPlayer, Player otherPlayer)
+   public void ReDistributeCounterclockwise(Pit src, Player currentPlayer, Player otherPlayer)
    {
       if (this.getPattern().getHasMatch())
       {
           ((Board) getCurrentMatch()).ReDistributeCounterclockwise(src, currentPlayer, otherPlayer);
       }
+   }
+
+   public PlayerPO createPlayersPO()
+   {
+      PlayerPO result = new PlayerPO(new Player[]{});
+      
+      result.setModifier(this.getPattern().getModifier());
+      super.hasLink(Board.PROPERTY_PLAYERS, result);
+      
+      return result;
+   }
+
+   public PlayerPO createPlayersPO(String modifier)
+   {
+      PlayerPO result = new PlayerPO(new Player[]{});
+      
+      result.setModifier(modifier);
+      super.hasLink(Board.PROPERTY_PLAYERS, result);
+      
+      return result;
+   }
+
+   public BoardPO createPlayersLink(PlayerPO tgt)
+   {
+      return hasLinkConstraint(tgt, Board.PROPERTY_PLAYERS);
+   }
+
+   public BoardPO createPlayersLink(PlayerPO tgt, String modifier)
+   {
+      return hasLinkConstraint(tgt, Board.PROPERTY_PLAYERS, modifier);
+   }
+
+   public PlayerSet getPlayers()
+   {
+      if (this.getPattern().getHasMatch())
+      {
+         return ((Board) this.getCurrentMatch()).getPlayers();
+      }
+      return null;
    }
 
 }

@@ -1,5 +1,5 @@
 /*
-   Copyright (c) 2017 Salonika
+   Copyright (c) 2017 kimberly_93pc
    
    Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
    and associated documentation files (the "Software"), to deal in the Software without restriction, 
@@ -25,10 +25,11 @@ import de.uniks.networkparser.list.SimpleSet;
 import net.ulno.sa.Board;
 import de.uniks.networkparser.interfaces.Condition;
 import java.util.Collection;
-import de.uniks.networkparser.list.ObjectSet;
-import net.ulno.sa.util.PlayerSet;
 import net.ulno.sa.Player;
 import net.ulno.sa.Pit;
+import de.uniks.networkparser.list.ObjectSet;
+import java.util.Collections;
+import net.ulno.sa.util.PlayerSet;
 
 public class BoardSet extends SimpleSet<Board>
 {
@@ -107,31 +108,54 @@ public class BoardSet extends SimpleSet<Board>
       return this;
    }
 
+   
+   //==========================================================================
+   
+   public de.uniks.networkparser.list.BooleanList takeOppositePebbles(Player movingPlayer, Player otherPlayer, int curLocation)
+   {
+      
+      de.uniks.networkparser.list.BooleanList result = new de.uniks.networkparser.list.BooleanList();
+      
+      for (Board obj : this)
+      {
+         result.add( obj.takeOppositePebbles(movingPlayer, otherPlayer, curLocation) );
+      }
+      return result;
+   }
+
+   
+   //==========================================================================
+   
+   public BoardSet ReDistributeCounterclockwise(Pit src, Player currentPlayer, Player otherPlayer)
+   {
+      return BoardSet.EMPTY_SET;
+   }
+
    /**
-    * Loop through the current set of Board objects and collect a set of the Player objects reached via boardIBelongTo. 
+    * Loop through the current set of Board objects and collect a set of the Player objects reached via players. 
     * 
-    * @return Set of Player objects reachable via boardIBelongTo
+    * @return Set of Player objects reachable via players
     */
-   public PlayerSet getBoardIBelongTo()
+   public PlayerSet getPlayers()
    {
       PlayerSet result = new PlayerSet();
       
       for (Board obj : this)
       {
-         result.with(obj.getBoardIBelongTo());
+         result.with(obj.getPlayers());
       }
       
       return result;
    }
 
    /**
-    * Loop through the current set of Board objects and collect all contained objects with reference boardIBelongTo pointing to the object passed as parameter. 
+    * Loop through the current set of Board objects and collect all contained objects with reference players pointing to the object passed as parameter. 
     * 
-    * @param value The object required as boardIBelongTo neighbor of the collected results. 
+    * @param value The object required as players neighbor of the collected results. 
     * 
-    * @return Set of Player objects referring to value via boardIBelongTo
+    * @return Set of Player objects referring to value via players
     */
-   public BoardSet filterBoardIBelongTo(Object value)
+   public BoardSet filterPlayers(Object value)
    {
       ObjectSet neighbors = new ObjectSet();
 
@@ -148,7 +172,7 @@ public class BoardSet extends SimpleSet<Board>
       
       for (Board obj : this)
       {
-         if (neighbors.contains(obj.getBoardIBelongTo()) || (neighbors.isEmpty() && obj.getBoardIBelongTo() == null))
+         if ( ! Collections.disjoint(neighbors, obj.getPlayers()))
          {
             answer.add(obj);
          }
@@ -158,65 +182,33 @@ public class BoardSet extends SimpleSet<Board>
    }
 
    /**
-    * Loop through current set of ModelType objects and attach the Board object passed as parameter to the BoardIBelongTo attribute of each of it. 
+    * Loop through current set of ModelType objects and attach the Board object passed as parameter to the Players attribute of each of it. 
     * 
-    * @return The original set of ModelType objects now with the new neighbor attached to their BoardIBelongTo attributes.
+    * @return The original set of ModelType objects now with the new neighbor attached to their Players attributes.
     */
-   public BoardSet withBoardIBelongTo(Player value)
+   public BoardSet withPlayers(Player value)
    {
       for (Board obj : this)
       {
-         obj.withBoardIBelongTo(value);
+         obj.withPlayers(value);
       }
       
       return this;
    }
 
-   
-   //==========================================================================
-   
-   public BoardSet takeOppositePebbles(Player player, int curLocation)
+   /**
+    * Loop through current set of ModelType objects and remove the Board object passed as parameter from the Players attribute of each of it. 
+    * 
+    * @return The original set of ModelType objects now without the old neighbor.
+    */
+   public BoardSet withoutPlayers(Player value)
    {
-      return BoardSet.EMPTY_SET;
-   }
-
-   
-   //==========================================================================
-   
-   public BoardSet takeOppositePebbles(Player movingPlayer, Player otherPlayer, int curLocation)
-   {
-      return BoardSet.EMPTY_SET;
-   }
-
-//   /**
-//    * Loop through current set of ModelType objects and remove the Board object passed as parameter from the BoardIBelongTo attribute of each of it.
-//    *
-//    * @return The original set of ModelType objects now without the old neighbor.
-//    */
-//   public BoardSet withoutBoardIBelongTo(Player value)
-//   {
-//      for (Board obj : this)
-//      {
-//         obj.withoutBoardIBelongTo(value);
-//      }
-//
-//      return this;
-//   }
-
-   
-   //==========================================================================
-   
-   public BoardSet ReDistributeCounterclockwise(Pit src, int pebbles)
-   {
-      return BoardSet.EMPTY_SET;
-   }
-
-   
-   //==========================================================================
-   
-   public BoardSet ReDistributeCounterclockwise(Pit src, Player currentPlayer, Player otherPlayer)
-   {
-      return BoardSet.EMPTY_SET;
+      for (Board obj : this)
+      {
+         obj.withoutPlayers(value);
+      }
+      
+      return this;
    }
 
 }

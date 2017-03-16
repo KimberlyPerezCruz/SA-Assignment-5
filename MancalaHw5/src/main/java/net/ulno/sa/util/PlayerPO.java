@@ -10,7 +10,6 @@ import net.ulno.sa.util.PlayerPO;
 import net.ulno.sa.util.PitSet;
 import net.ulno.sa.util.BoardPO;
 import net.ulno.sa.Board;
-import net.ulno.sa.util.BoardSet;
 
 public class PlayerPO extends PatternObject<PlayerPO, Player>
 {
@@ -208,80 +207,41 @@ public class PlayerPO extends PatternObject<PlayerPO, Player>
       return null;
    }
 
-   public PitPO createPlayerIBelongToPO()
-   {
-      PitPO result = new PitPO(new Pit[]{});
-      
-      result.setModifier(this.getPattern().getModifier());
-      super.hasLink(Player.PROPERTY_PLAYERIBELONGTO, result);
-      
-      return result;
-   }
-
-   public PitPO createPlayerIBelongToPO(String modifier)
-   {
-      PitPO result = new PitPO(new Pit[]{});
-      
-      result.setModifier(modifier);
-      super.hasLink(Player.PROPERTY_PLAYERIBELONGTO, result);
-      
-      return result;
-   }
-
-   public PlayerPO createPlayerIBelongToLink(PitPO tgt)
-   {
-      return hasLinkConstraint(tgt, Player.PROPERTY_PLAYERIBELONGTO);
-   }
-
-   public PlayerPO createPlayerIBelongToLink(PitPO tgt, String modifier)
-   {
-      return hasLinkConstraint(tgt, Player.PROPERTY_PLAYERIBELONGTO, modifier);
-   }
-
-   public PitSet getPlayerIBelongTo()
-   {
-      if (this.getPattern().getHasMatch())
-      {
-         return ((Player) this.getCurrentMatch()).getPlayerIBelongTo();
-      }
-      return null;
-   }
-
-   public BoardPO createPlayerPO()
+   public BoardPO createBoardPO()
    {
       BoardPO result = new BoardPO(new Board[]{});
       
       result.setModifier(this.getPattern().getModifier());
-      super.hasLink(Player.PROPERTY_PLAYER, result);
+      super.hasLink(Player.PROPERTY_BOARD, result);
       
       return result;
    }
 
-   public BoardPO createPlayerPO(String modifier)
+   public BoardPO createBoardPO(String modifier)
    {
       BoardPO result = new BoardPO(new Board[]{});
       
       result.setModifier(modifier);
-      super.hasLink(Player.PROPERTY_PLAYER, result);
+      super.hasLink(Player.PROPERTY_BOARD, result);
       
       return result;
    }
 
-   public PlayerPO createPlayerLink(BoardPO tgt)
+   public PlayerPO createBoardLink(BoardPO tgt)
    {
-      return hasLinkConstraint(tgt, Player.PROPERTY_PLAYER);
+      return hasLinkConstraint(tgt, Player.PROPERTY_BOARD);
    }
 
-   public PlayerPO createPlayerLink(BoardPO tgt, String modifier)
+   public PlayerPO createBoardLink(BoardPO tgt, String modifier)
    {
-      return hasLinkConstraint(tgt, Player.PROPERTY_PLAYER, modifier);
+      return hasLinkConstraint(tgt, Player.PROPERTY_BOARD, modifier);
    }
 
-   public BoardSet getPlayer()
+   public Board getBoard()
    {
       if (this.getPattern().getHasMatch())
       {
-         return ((Player) this.getCurrentMatch()).getPlayer();
+         return ((Player) this.getCurrentMatch()).getBoard();
       }
       return null;
    }

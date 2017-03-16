@@ -26,7 +26,6 @@ public class Model {
                 .withAttribute("pebblesIn", DataType.INT)
                 .withAttribute("isKalah", DataType.BOOLEAN);
 
-        // pitClass.withAttribute("oppositeOf", DataType.create(pitClass));
 
         Clazz boardClass = model.createClazz("Board");
 
@@ -37,10 +36,11 @@ public class Model {
                 new Parameter(pitClass).with("src"),
                 new Parameter(playerClass).with("currentPlayer"),
                 new Parameter(playerClass).with("otherPlayer"));
-        //university.withBidirectional(student, "student", Cardinality.MANY,"almaMater",Cardinality.ONE);
-        playerClass.withBidirectional(pitClass,"playerIBelongTo",Cardinality.MANY,"pitsIHave",Cardinality.MANY);
 
-        boardClass.withBidirectional(playerClass,"boardIBelongTo",Cardinality.ONE,"player",Cardinality.MANY);
+        //university.withBidirectional(student, "student", Cardinality.MANY,"almaMater",Cardinality.ONE);
+        playerClass.withBidirectional(pitClass,"pitsIHave",Cardinality.MANY,"playerIBelongTo",Cardinality.MANY);
+
+        boardClass.withBidirectional(playerClass,"players",Cardinality.MANY,"board",Cardinality.ONE);
 
         pitClass.withBidirectional(pitClass,"oppositeOf",Cardinality.MANY,"oppositeOf",Cardinality.MANY);
         pitClass.withBidirectional(pitClass,"successor",Cardinality.ONE,"successor",Cardinality.ONE);
