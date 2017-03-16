@@ -1,24 +1,24 @@
 /*
    Copyright (c) 2017 Salonika
-   
-   Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
-   and associated documentation files (the "Software"), to deal in the Software without restriction, 
-   including without limitation the rights to use, copy, modify, merge, publish, distribute, 
-   sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
-   furnished to do so, subject to the following conditions: 
-   
-   The above copyright notice and this permission notice shall be included in all copies or 
-   substantial portions of the Software. 
-   
-   The Software shall be used for Good, not Evil. 
-   
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
-   BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
-   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
-   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+   and associated documentation files (the "Software"), to deal in the Software without restriction,
+   including without limitation the rights to use, copy, modify, merge, publish, distribute,
+   sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all copies or
+   substantial portions of the Software.
+
+   The Software shall be used for Good, not Evil.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-   
+
 package net.ulno.sa;
 
 import de.uniks.networkparser.interfaces.SendableEntity;
@@ -26,17 +26,17 @@ import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeListener;
 import net.ulno.sa.Player;
    /**
-    * 
+    *
     * @see <a href='../../../../../../src/main/java/net/ulno/sa/Model.java'>Model.java</a>
  */
    public  class Board implements SendableEntity
 {
 
-   
+
    //==========================================================================
-   
+
    protected PropertyChangeSupport listeners = null;
-   
+
    public boolean firePropertyChange(String propertyName, Object oldValue, Object newValue)
    {
       if (listeners != null) {
@@ -45,8 +45,8 @@ import net.ulno.sa.Player;
    	}
    	return false;
    }
-   
-   public boolean addPropertyChangeListener(PropertyChangeListener listener) 
+
+   public boolean addPropertyChangeListener(PropertyChangeListener listener)
    {
    	if (listeners == null) {
    		listeners = new PropertyChangeSupport(this);
@@ -54,7 +54,7 @@ import net.ulno.sa.Player;
    	listeners.addPropertyChangeListener(listener);
    	return true;
    }
-   
+
    public boolean addPropertyChangeListener(String propertyName, PropertyChangeListener listener) {
    	if (listeners == null) {
    		listeners = new PropertyChangeSupport(this);
@@ -62,7 +62,7 @@ import net.ulno.sa.Player;
    	listeners.addPropertyChangeListener(propertyName, listener);
    	return true;
    }
-   
+
    public boolean removePropertyChangeListener(PropertyChangeListener listener) {
    	if (listeners == null) {
    		listeners.removePropertyChangeListener(listener);
@@ -78,17 +78,17 @@ import net.ulno.sa.Player;
    	return true;
    }
 
-   
+
    //==========================================================================
-   
-   
+
+
    public void removeYou()
    {
       setBoardIBelongTo(null);
       firePropertyChange("REMOVE_YOU", this, null);
    }
 
-   
+
    /********************************************************************
     * <pre>
     *              many                       one
@@ -96,7 +96,7 @@ import net.ulno.sa.Player;
     *              player                   boardIBelongTo
     * </pre>
     */
-   
+
    public static final String PROPERTY_BOARDIBELONGTO = "boardIBelongTo";
 
    private Player boardIBelongTo = null;
@@ -109,28 +109,28 @@ import net.ulno.sa.Player;
    public boolean setBoardIBelongTo(Player value)
    {
       boolean changed = false;
-      
+
       if (this.boardIBelongTo != value)
       {
          Player oldValue = this.boardIBelongTo;
-         
+
          if (this.boardIBelongTo != null)
          {
             this.boardIBelongTo = null;
             oldValue.withoutPlayer(this);
          }
-         
+
          this.boardIBelongTo = value;
-         
+
          if (value != null)
          {
             value.withPlayer(this);
          }
-         
+
          firePropertyChange(PROPERTY_BOARDIBELONGTO, oldValue, value);
          changed = true;
       }
-      
+
       return changed;
    }
 
@@ -138,12 +138,48 @@ import net.ulno.sa.Player;
    {
       setBoardIBelongTo(value);
       return this;
-   } 
+   }
 
    public Player createBoardIBelongTo()
    {
       Player value = new Player();
       withBoardIBelongTo(value);
       return value;
-   } 
+   }
+
+
+   //==========================================================================
+     /*
+     *  Take all pebbles from pit opposite from the current player's pit by emptying the opposite pit.
+     *  Place these pebbles in calling player's Kalah:
+     *      store number of pebbles in current player's Kalah
+     *      add the number of pebbles in opposite pit to current player's Kalah
+    */
+   public void takeOppositePebbles( Player movingPlayer, Player otherPlayer, int curLocation ) {
+       // Same implementation as hw4 just made work for this version.
+       int pebblesInOpp = 0;
+       int old = 0;
+       pebblesInOpp = otherPlayer.getPitsIHave().get(curLocation).getPebblesIn();
+       System.out.println("Pebbles in "+ otherPlayer.getName() + " " + (curLocation) + " " + pebblesInOpp + "\n");
+       movingPlayer.getPitsIHave().get(curLocation).setPebblesIn(0);
+       otherPlayer.getPitsIHave().get(curLocation).setPebblesIn(0);
+       old =  movingPlayer.getPitsIHave().get(6).getPebblesIn();
+       // Adding 1 because of the last pebble that was dropped on empty pit.
+       movingPlayer.getPitsIHave().get(6).setPebblesIn(pebblesInOpp+old+1);
+   }
+
+    public void ReDistributeCounterclockwise(Pit src, int pebbles){
+       // Same implementation as hw4 just made work for this version.
+        int i = 0;
+        int p = 0;
+        Pit temp = src.getSuccessor();
+        src.setPebblesIn(0);
+        while(i<pebbles){
+            temp.toString();
+            p = temp.getPebblesIn();
+            temp.setPebblesIn(p+1);
+            temp = temp.getSuccessor();
+            i++;
+        }
+    }
 }

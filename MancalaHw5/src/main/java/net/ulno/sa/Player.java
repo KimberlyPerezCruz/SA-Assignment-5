@@ -95,75 +95,75 @@ import net.ulno.sa.Board;
       firePropertyChange("REMOVE_YOU", this, null);
    }
 
-   
+
    //==========================================================================
-   
+
    public static final String PROPERTY_NAME = "name";
-   
+
    private String name;
 
    public String getName()
    {
       return this.name;
    }
-   
+
    public void setName(String value)
    {
       if ( ! EntityUtil.stringEquals(this.name, value)) {
-      
+
          String oldValue = this.name;
          this.name = value;
          this.firePropertyChange(PROPERTY_NAME, oldValue, value);
       }
    }
-   
+
    public Player withName(String value)
    {
       setName(value);
       return this;
-   } 
+   }
 
 
    @Override
    public String toString()
    {
       StringBuilder result = new StringBuilder();
-      
+
       result.append(" ").append(this.getName());
       result.append(" ").append(this.getPebblesHolding());
       return result.substring(1);
    }
 
 
-   
+
    //==========================================================================
-   
+
    public static final String PROPERTY_PEBBLESHOLDING = "pebblesHolding";
-   
+
    private int pebblesHolding;
 
    public int getPebblesHolding()
    {
       return this.pebblesHolding;
    }
-   
+
    public void setPebblesHolding(int value)
    {
       if (this.pebblesHolding != value) {
-      
+
          int oldValue = this.pebblesHolding;
          this.pebblesHolding = value;
          this.firePropertyChange(PROPERTY_PEBBLESHOLDING, oldValue, value);
       }
    }
-   
+
    public Player withPebblesHolding(int value)
    {
       setPebblesHolding(value);
       return this;
-   } 
+   }
 
-   
+
    /********************************************************************
     * <pre>
     *              many                       many
@@ -171,18 +171,18 @@ import net.ulno.sa.Board;
     *              playerIBelongTo                   pitsIHave
     * </pre>
     */
-   
+
    public static final String PROPERTY_PITSIHAVE = "pitsIHave";
 
    private PitSet pitsIHave = null;
-   
+
    public PitSet getPitsIHave()
    {
       if (this.pitsIHave == null)
       {
          return PitSet.EMPTY_SET;
       }
-   
+
       return this.pitsIHave;
    }
 
@@ -199,7 +199,7 @@ import net.ulno.sa.Board;
             {
                this.pitsIHave = new PitSet();
             }
-            
+
             boolean changed = this.pitsIHave.add (item);
 
             if (changed)
@@ -210,7 +210,7 @@ import net.ulno.sa.Board;
          }
       }
       return this;
-   } 
+   }
 
    public Player withoutPitsIHave(Pit... value)
    {
@@ -235,9 +235,9 @@ import net.ulno.sa.Board;
       Pit value = new Pit();
       withPitsIHave(value);
       return value;
-   } 
+   }
 
-   
+
    /********************************************************************
     * <pre>
     *              many                       many
@@ -245,18 +245,18 @@ import net.ulno.sa.Board;
     *              pitsIHave                   playerIBelongTo
     * </pre>
     */
-   
+
    public static final String PROPERTY_PLAYERIBELONGTO = "playerIBelongTo";
 
    private PitSet playerIBelongTo = null;
-   
+
    public PitSet getPlayerIBelongTo()
    {
       if (this.playerIBelongTo == null)
       {
          return PitSet.EMPTY_SET;
       }
-   
+
       return this.playerIBelongTo;
    }
 
@@ -273,7 +273,7 @@ import net.ulno.sa.Board;
             {
                this.playerIBelongTo = new PitSet();
             }
-            
+
             boolean changed = this.playerIBelongTo.add (item);
 
             if (changed)
@@ -284,7 +284,7 @@ import net.ulno.sa.Board;
          }
       }
       return this;
-   } 
+   }
 
    public Player withoutPlayerIBelongTo(Pit... value)
    {
@@ -307,9 +307,9 @@ import net.ulno.sa.Board;
       Pit value = new Pit();
       withPlayerIBelongTo(value);
       return value;
-   } 
+   }
 
-   
+
    /********************************************************************
     * <pre>
     *              one                       many
@@ -317,18 +317,18 @@ import net.ulno.sa.Board;
     *              boardIBelongTo                   player
     * </pre>
     */
-   
+
    public static final String PROPERTY_PLAYER = "player";
 
    private BoardSet player = null;
-   
+
    public BoardSet getPlayer()
    {
       if (this.player == null)
       {
          return BoardSet.EMPTY_SET;
       }
-   
+
       return this.player;
    }
 
@@ -345,7 +345,7 @@ import net.ulno.sa.Board;
             {
                this.player = new BoardSet();
             }
-            
+
             boolean changed = this.player.add (item);
 
             if (changed)
@@ -356,7 +356,7 @@ import net.ulno.sa.Board;
          }
       }
       return this;
-   } 
+   }
 
    public Player withoutPlayer(Board... value)
    {
@@ -374,10 +374,32 @@ import net.ulno.sa.Board;
       return this;
    }
 
-   public Board createPlayer()
+   public Board createPlayer(Board board)
    {
-      Board value = new Board();
-      withPlayer(value);
-      return value;
+//      Board value = new Board();
+      withPlayer(board);
+      // Same implementation as hw4 made it work for this version.
+      this.name = name;
+      this.pebblesHolding = 0;
+      this.pitsIHave = new PitSet();
+      for(int i = 0; i < 7; i++){
+
+         if(i>0 && i<7){
+            this.pitsIHave.get(i-1).setSuccessor(this.pitsIHave.get(i));
+         }
+         if(i==6){
+            this.pitsIHave.add(i, new Pit());
+            this.pitsIHave.get(i).setPebblesIn(0);
+            this.pitsIHave.get(i).setIsKalah(true);
+         }
+         else {
+            this.pitsIHave.add(i, new Pit());
+            this.pitsIHave.get(i).setPebblesIn(4);
+            this.pitsIHave.get(i).setIsKalah(false);
+         }
+
+      }
+
+      return board;
    } 
 }

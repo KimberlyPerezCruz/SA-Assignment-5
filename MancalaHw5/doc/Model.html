@@ -35,7 +35,10 @@
       },
       {
          "typ":"node",
-         "id":"Board"
+         "id":"Board",
+         "methods":[
+            "takeOppositePebbles(net.ulno.sa.Player movingPlayer, net.ulno.sa.Player otherPlayer, int curLocation)"
+         ]
       }
    ],
    "edges":[
@@ -56,12 +59,12 @@
          "typ":"ASSOCIATION",
          "source":{
             "id":"Player",
-            "cardinality":"one",
+            "cardinality":"many",
             "property":"boardIBelongTo"
          },
          "target":{
             "id":"Board",
-            "cardinality":"many",
+            "cardinality":"one",
             "property":"player"
          }
       },

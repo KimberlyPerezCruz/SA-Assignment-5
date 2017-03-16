@@ -171,4 +171,35 @@ public class BoardSet extends SimpleSet<Board>
       return this;
    }
 
+   
+   //==========================================================================
+   
+   public BoardSet takeOppositePebbles(Player player, int curLocation)
+   {
+      return BoardSet.EMPTY_SET;
+   }
+
+   
+   //==========================================================================
+   
+   public BoardSet takeOppositePebbles(Player movingPlayer, Player otherPlayer, int curLocation)
+   {
+      return BoardSet.EMPTY_SET;
+   }
+
+//   /**
+//    * Loop through current set of ModelType objects and remove the Board object passed as parameter from the BoardIBelongTo attribute of each of it.
+//    *
+//    * @return The original set of ModelType objects now without the old neighbor.
+//    */
+//   public BoardSet withoutBoardIBelongTo(Player value)
+//   {
+//      for (Board obj : this)
+//      {
+//         obj.withoutBoardIBelongTo(value);
+//      }
+//
+//      return this;
+//   }
+
 }

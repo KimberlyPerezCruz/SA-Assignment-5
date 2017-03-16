@@ -80,4 +80,15 @@ public class BoardPO extends PatternObject<BoardPO, Board>
       return null;
    }
 
+   
+   //==========================================================================
+   
+   public void takeOppositePebbles(Player movingPlayer,Player otherPlayer, int curLocation)
+   {
+      if (this.getPattern().getHasMatch())
+      {
+          ((Board) getCurrentMatch()).takeOppositePebbles(movingPlayer, otherPlayer, curLocation);
+      }
+   }
+
 }
