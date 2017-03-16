@@ -384,9 +384,7 @@ import net.ulno.sa.Board;
       this.pitsIHave = new PitSet();
       for(int i = 0; i < 7; i++){
 
-         if(i>0 && i<7){
-            this.pitsIHave.get(i-1).setSuccessor(this.pitsIHave.get(i));
-         }
+
          if(i==6){
             this.pitsIHave.add(i, new Pit());
             this.pitsIHave.get(i).setPebblesIn(0);
@@ -397,9 +395,19 @@ import net.ulno.sa.Board;
             this.pitsIHave.get(i).setPebblesIn(4);
             this.pitsIHave.get(i).setIsKalah(false);
          }
+         if(i>0 && i<7){
+            this.pitsIHave.get(i-1).setSuccessor(this.pitsIHave.last());
+         }
 
       }
 
       return board;
+   } 
+
+   public Board createPlayer()
+   {
+      Board value = new Board();
+      withPlayer(value);
+      return value;
    } 
 }

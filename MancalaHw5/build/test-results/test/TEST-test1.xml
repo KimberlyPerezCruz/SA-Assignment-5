@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test1" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-16T10:06:15" hostname="Kimberly-Perezs-MacBook-Pro.local" time="0.022">
-  <properties/>
-  <testcase name="takeOppositePebbles" classname="test1" time="0.022"/>
-  <system-out><![CDATA[Pebbles in Ash 5 4
-
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

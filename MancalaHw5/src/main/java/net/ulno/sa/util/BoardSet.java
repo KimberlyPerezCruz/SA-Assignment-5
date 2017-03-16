@@ -28,6 +28,7 @@ import java.util.Collection;
 import de.uniks.networkparser.list.ObjectSet;
 import net.ulno.sa.util.PlayerSet;
 import net.ulno.sa.Player;
+import net.ulno.sa.Pit;
 
 public class BoardSet extends SimpleSet<Board>
 {
@@ -201,5 +202,13 @@ public class BoardSet extends SimpleSet<Board>
 //
 //      return this;
 //   }
+
+   
+   //==========================================================================
+   
+   public BoardSet ReDistributeCounterclockwise(Pit src, int pebbles)
+   {
+      return BoardSet.EMPTY_SET;
+   }
 
 }

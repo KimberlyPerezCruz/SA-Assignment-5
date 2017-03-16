@@ -37,7 +37,8 @@
          "typ":"node",
          "id":"Board",
          "methods":[
-            "takeOppositePebbles(net.ulno.sa.Player movingPlayer, net.ulno.sa.Player otherPlayer, int curLocation)"
+            "takeOppositePebbles(net.ulno.sa.Player movingPlayer, net.ulno.sa.Player otherPlayer, int curLocation) boolean",
+            "ReDistributeCounterclockwise(net.ulno.sa.Pit src, int pebbles)"
          ]
       }
    ],
@@ -59,12 +60,12 @@
          "typ":"ASSOCIATION",
          "source":{
             "id":"Player",
-            "cardinality":"many",
+            "cardinality":"one",
             "property":"boardIBelongTo"
          },
          "target":{
             "id":"Board",
-            "cardinality":"one",
+            "cardinality":"many",
             "property":"player"
          }
       },
@@ -98,7 +99,6 @@
 }   ;
    new Graph(json, {"canvasid":"canvasModelClassDiagram1", "display":"html", fontsize:10, bar:false, propertyinfo:false}).layout(100,100);
 </script>
-<p>No methods are actually specified</p>
 
 </body>
 </html>

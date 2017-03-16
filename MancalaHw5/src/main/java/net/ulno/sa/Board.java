@@ -155,30 +155,37 @@ import net.ulno.sa.Player;
      *      store number of pebbles in current player's Kalah
      *      add the number of pebbles in opposite pit to current player's Kalah
     */
-   public void takeOppositePebbles( Player movingPlayer, Player otherPlayer, int curLocation ) {
+   public boolean takeOppositePebbles( Player movingPlayer, Player otherPlayer, int curLocation ) {
        // Same implementation as hw4 just made work for this version.
        int pebblesInOpp = 0;
        int old = 0;
-       pebblesInOpp = otherPlayer.getPitsIHave().get(curLocation).getPebblesIn();
-       System.out.println("Pebbles in "+ otherPlayer.getName() + " " + (curLocation) + " " + pebblesInOpp + "\n");
-       movingPlayer.getPitsIHave().get(curLocation).setPebblesIn(0);
-       otherPlayer.getPitsIHave().get(curLocation).setPebblesIn(0);
-       old =  movingPlayer.getPitsIHave().get(6).getPebblesIn();
-       // Adding 1 because of the last pebble that was dropped on empty pit.
-       movingPlayer.getPitsIHave().get(6).setPebblesIn(pebblesInOpp+old+1);
+       if(movingPlayer.getPitsIHave().get(curLocation).getPebblesIn()==0) {
+           pebblesInOpp = otherPlayer.getPitsIHave().get(5-curLocation).getPebblesIn();
+           System.out.println("Pebbles in " + otherPlayer.getName() + "'s pit " + (5-curLocation) + " is " + pebblesInOpp + "\n");
+           movingPlayer.getPitsIHave().get(curLocation).setPebblesIn(0);
+           otherPlayer.getPitsIHave().get(5-curLocation).setPebblesIn(0);
+           old = movingPlayer.getPitsIHave().get(6).getPebblesIn();
+           // Adding 1 because of the last pebble that was dropped on empty pit.
+           movingPlayer.getPitsIHave().get(6).setPebblesIn(pebblesInOpp + old + 1);
+           return true;
+       }
+       else return false;
    }
 
-    public void ReDistributeCounterclockwise(Pit src, int pebbles){
+    public void ReDistributeCounterclockwise(Pit src, int pebbles, Pit opponents){
        // Same implementation as hw4 just made work for this version.
         int i = 0;
         int p = 0;
+
         Pit temp = src.getSuccessor();
         src.setPebblesIn(0);
         while(i<pebbles){
-            temp.toString();
+//            temp.toString();
             p = temp.getPebblesIn();
             temp.setPebblesIn(p+1);
             temp = temp.getSuccessor();
+            if(temp!=null && temp.isIsKalah())
+               temp =  opponents;// Next that follows it opponents pit.
             i++;
         }
     }

@@ -424,7 +424,7 @@ import net.ulno.sa.util.PitSet;
          
          if (value != null)
          {
-            value.withSuccessor(this);
+//            value.withSuccessor(this);
          }
          
          firePropertyChange(PROPERTY_SUCCESSOR, oldValue, value);

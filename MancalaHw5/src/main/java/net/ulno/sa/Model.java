@@ -30,9 +30,13 @@ public class Model {
 
         Clazz boardClass = model.createClazz("Board");
 
-        boardClass.withMethod("takeOppositePebbles", DataType.VOID, new Parameter(playerClass).with("movingPlayer"),
+        boardClass.withMethod("takeOppositePebbles", DataType.BOOLEAN, new Parameter(playerClass).with("movingPlayer"),
                 new Parameter(playerClass).with("otherPlayer"),
                 new Parameter(DataType.INT).with("curLocation"));
+        boardClass.withMethod("ReDistributeCounterclockwise",DataType.VOID,
+                new Parameter(pitClass).with("src"),
+                new Parameter(DataType.INT).with("pebbles"),
+                new Parameter(pitClass).with("opponent"));
 
         //university.withBidirectional(student, "student", Cardinality.MANY,"almaMater",Cardinality.ONE);
         playerClass.withBidirectional(pitClass,"playerIBelongTo",Cardinality.MANY,"pitsIHave",Cardinality.MANY);
@@ -49,7 +53,7 @@ public class Model {
         Storyboard storyboard = new Storyboard();
         storyboard.add("This is just showing us our class diagram");
         storyboard.addClassDiagram(model);
-        storyboard.add("No methods are actually specified");
+//        storyboard.add("No methods are actually specified");
         storyboard.dumpHTML();
     }
 }

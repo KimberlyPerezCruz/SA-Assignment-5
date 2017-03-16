@@ -22,13 +22,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="239">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerSet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/util/PlayerSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2103#2104#0" expanded="true" />
+                <element signature="e#2174#2175#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,10 +51,10 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding>
-                <element signature="e#0#6003#0" expanded="true" />
+                <element signature="e#0#6325#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#3504#3505#0" expanded="true" />
                 <element signature="e#3543#3544#0" expanded="true" />
@@ -49,21 +63,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
+      <file leaf-file-name="Pit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Pit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="28" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="101">
+              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding>
+                <element signature="e#3739#3740#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Pit.java">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="299" column="33" lean-forward="true" selection-start-line="299" selection-start-column="33" selection-end-line="299" selection-end-column="33" />
+            <state relative-caret-position="110">
+              <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+              <folding>
+                <element signature="e#3708#3709#0" expanded="true" />
+                <element signature="e#3737#3738#0" expanded="true" />
+                <element signature="e#4552#4553#0" expanded="true" />
+                <element signature="e#4591#4592#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -72,24 +103,19 @@
       <file leaf-file-name="test2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="224">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Player.java">
+      <file leaf-file-name="ReflectiveCallable.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="387" column="47" lean-forward="true" selection-start-line="387" selection-start-column="47" selection-end-line="387" selection-end-column="47" />
-              <folding>
-                <element signature="e#3708#3709#0" expanded="true" />
-                <element signature="e#3737#3738#0" expanded="true" />
-                <element signature="e#4552#4553#0" expanded="true" />
-                <element signature="e#4591#4592#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,6 +132,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>createPit</find>
+      <find>sucess</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -321,15 +348,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/util/BoardPO.java" />
         <option value="$PROJECT_DIR$/src/test/java/test4.java" />
         <option value="$PROJECT_DIR$/src/test/java/test3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/Model.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/util/BoardSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/Pit.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/Pit.java" />
         <option value="$PROJECT_DIR$/src/test/java/test1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/util/BoardPO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/ulno/sa/Board.java" />
         <option value="$PROJECT_DIR$/src/test/java/test2.java" />
       </list>
     </option>
@@ -460,7 +487,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.test1.takeOppositePebbles">
+  <component name="RunManager" selected="Gradle.test2.takeOppositePebbles">
     <configuration default="false" name="All in MancalaHw5_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MancalaHw5_test" />
@@ -540,6 +567,25 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="test2.takeOppositePebbles" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;test2.takeOppositePebbles&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -746,18 +792,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in MancalaHw5_test" />
       <item index="1" class="java.lang.String" itemvalue="Application.Model" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.test1.takeOppositePebbles" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.test1.takeOppositePebbles" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.test2.takeOppositePebbles" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.test1.takeOppositePebbles" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Model" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.test1.takeOppositePebbles" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in MancalaHw5_test" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.test2.takeOppositePebbles" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.test1.takeOppositePebbles" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Model" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.test1.takeOppositePebbles" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in MancalaHw5_test" />
       </list>
     </recent_temporary>
   </component>
@@ -775,35 +823,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 22m 22s.xml">
+    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 09h 26m 17s.xml">
       <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 22m 48s.xml">
+    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 09h 38m 11s.xml">
       <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 27m 35s.xml">
+    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 09h 40m 54s.xml">
       <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 29m 25s.xml">
+    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 09h 43m 14s.xml">
       <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 31m 15s.xml">
+    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 09h 43m 30s.xml">
       <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 48m 09s.xml">
+    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 09h 49m 08s.xml">
       <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 48m 12s.xml">
-      <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
+    <history-entry file="test2_takeOppositePebbles - 2017.03.16 at 09h 49m 17s.xml">
+      <configuration name="test2.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 05h 48m 15s.xml">
-      <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
+    <history-entry file="test2_takeOppositePebbles - 2017.03.16 at 09h 51m 54s.xml">
+      <configuration name="test2.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 06h 05m 35s.xml">
-      <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
+    <history-entry file="test2_takeOppositePebbles - 2017.03.16 at 09h 52m 48s.xml">
+      <configuration name="test2.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="test1_takeOppositePebbles - 2017.03.16 at 06h 06m 15s.xml">
-      <configuration name="test1.takeOppositePebbles" configurationId="GradleRunConfiguration" />
+    <history-entry file="test2_takeOppositePebbles - 2017.03.16 at 09h 52m 54s.xml">
+      <configuration name="test2.takeOppositePebbles" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -819,7 +867,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2716593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2716593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -877,7 +925,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Board.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -923,14 +979,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/util/BoardPO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="84" column="3" lean-forward="false" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -944,45 +992,6 @@
         <state relative-caret-position="195">
           <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/util/PlayerSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2430">
-          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1004">
-          <caret line="315" column="0" lean-forward="false" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
-          <folding>
-            <element signature="e#2542#2543#0" expanded="false" />
-            <element signature="e#2586#2587#0" expanded="false" />
-            <element signature="e#9008#9147#0" expanded="false" />
-            <element signature="e#9146#9147#0" expanded="false" />
-            <element signature="e#9300#9448#0" expanded="false" />
-            <element signature="e#9447#9448#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,18 +1022,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/de.uniks/NetworkParser/4.4.311/2ed0c53eeed3d9314b6350d134c8abdda779b8fe/NetworkParser-4.4.311-sources.jar!/de/uniks/networkparser/list/AbstractArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="1360" column="0" lean-forward="false" selection-start-line="1360" selection-start-column="0" selection-end-line="1360" selection-end-column="0" />
+          <folding>
+            <element signature="e#35414#35415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="274" column="0" lean-forward="false" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/util/PlayerSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2103#2104#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Pit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="299" column="33" lean-forward="true" selection-start-line="299" selection-start-column="33" selection-end-line="299" selection-end-column="33" />
+        <state relative-caret-position="101">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#3739#3740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/util/BoardPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="97" column="78" lean-forward="false" selection-start-line="97" selection-start-column="78" selection-end-line="97" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="387" column="47" lean-forward="true" selection-start-line="387" selection-start-column="47" selection-end-line="387" selection-end-column="47" />
+        <state relative-caret-position="110">
+          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
           <folding>
             <element signature="e#3708#3709#0" expanded="true" />
             <element signature="e#3737#3738#0" expanded="true" />
@@ -1036,10 +1103,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding>
-            <element signature="e#0#6003#0" expanded="true" />
+            <element signature="e#0#6325#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#3504#3505#0" expanded="true" />
             <element signature="e#3543#3544#0" expanded="true" />
@@ -1047,29 +1114,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
+    <entry file="jar://$PROJECT_DIR$/../../SAStudyRightByHand-master/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="224">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/ulno/sa/Model.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="219">
+          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

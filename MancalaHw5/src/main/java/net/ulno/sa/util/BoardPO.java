@@ -5,6 +5,7 @@ import net.ulno.sa.Board;
 import net.ulno.sa.util.PlayerPO;
 import net.ulno.sa.Player;
 import net.ulno.sa.util.BoardPO;
+import net.ulno.sa.Pit;
 
 public class BoardPO extends PatternObject<BoardPO, Board>
 {
@@ -88,6 +89,17 @@ public class BoardPO extends PatternObject<BoardPO, Board>
       if (this.getPattern().getHasMatch())
       {
           ((Board) getCurrentMatch()).takeOppositePebbles(movingPlayer, otherPlayer, curLocation);
+      }
+   }
+
+   
+   //==========================================================================
+   
+   public void ReDistributeCounterclockwise(Pit src, int pebbles, Pit opponent)
+   {
+      if (this.getPattern().getHasMatch())
+      {
+          ((Board) getCurrentMatch()).ReDistributeCounterclockwise(src, pebbles, opponent);
       }
    }
 
