@@ -11,18 +11,13 @@
 <script src="includes/drawer.js"></script>
 <script src="includes/graph.js"></script>
 </head><body>
-<p>Storyboard <a href='.././src/test/java/test2.java' type='text/x-java'>takeOppositePebbles</a></p>
-<p>Test Two Scenario:
+<p>Storyboard <a href='.././src/test/java/test1.java' type='text/x-java'>FirstReDistributeCounterclockwise</a></p>
+<p>Test one Scenario:
      
-Pre-condition: Players already made a move, this is 1st player first move.
+Pre-condition: Game initial state, this is first move.
      
-Post-condition: First player's Kalah has more pebbles.
-     
-Player Sal's last pebble fell in an empty pit, so Sal takes pebbles from opposite pit, which is Ash's pit.
-     
-Now Sal's fifth pit has zero pebbles and his Kalah has all of Ash's fifth pit pebbles and the last one he
-     
-dropped on empty pit.</p>
+Post-condition: Sal has 1 pebble in his Kalah. Ash has 5 pebbles in his first 3 pits
+     Scenario:     First player Sal's make his first move, selecting the pebbles from pit 5 to distribute.     Now, Sal's fifth pit will have no pebbles and four pits that follow the fifth pit, including     Sal's Kalah, has one extra pebble.</p>
 <script>
    var json = {
    "typ":"objectdiagram",
@@ -87,7 +82,7 @@ dropped on empty pit.</p>
          "typ":"clazz",
          "id":"P7 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=1",
             "isKalah=true"
          ]
       },
@@ -107,7 +102,7 @@ dropped on empty pit.</p>
          "typ":"clazz",
          "id":"P8 : Pit",
          "attributes":[
-            "pebblesIn=0",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -115,7 +110,7 @@ dropped on empty pit.</p>
          "typ":"clazz",
          "id":"P9 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -123,7 +118,7 @@ dropped on empty pit.</p>
          "typ":"clazz",
          "id":"P10 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -527,7 +522,7 @@ dropped on empty pit.</p>
       }
    ]
 }   ;
-   json["options"]={"canvasid":"canvastakeOppositePebbles2", "display":"svg", "fontsize":10,"bar":true};   var g = new Graph(json);
+   json["options"]={"canvasid":"canvasFirstReDistributeCounterclockwise2", "display":"svg", "fontsize":10,"bar":true};   var g = new Graph(json);
    g.layout(100,100);
 </script>
 

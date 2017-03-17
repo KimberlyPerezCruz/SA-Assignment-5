@@ -127,15 +127,26 @@ import net.ulno.sa.Player;
 //            temp.toString();
 
             // If this happens we need to start from start of other player's pits
-            if(temp.isIsKalah() && temp.getPlayerIBelongTo().equals(currentPlayer))
+            if(temp.isIsKalah() && temp.getPlayerIBelongTo().get(0).equals(currentPlayer))
+            {
+                int pebblesin = temp.getPebblesIn();
+                temp.setPebblesIn(pebblesin+1);
                 temp =  otherPlayer.getPitsIHave().get(0);// Next that follows its otherPlayer's pit.
+            }
             // If this happens we need to start from start of current player's pits
-            else if(temp.isIsKalah() && temp.getPlayerIBelongTo().equals(otherPlayer))
+            else if(temp.isIsKalah() && temp.getPlayerIBelongTo().get(0).equals(otherPlayer))
+            {
+                int pebblesin = temp.getPebblesIn();
+                temp.setPebblesIn(pebblesin+2);
                 temp =  currentPlayer.getPitsIHave().get(0);// Next that follows its currentPlayer's pit.
+            }
+            else {
 
-            p = temp.getPebblesIn();
-            temp.setPebblesIn(p+1);
-            temp = temp.getSuccessor();
+                p = temp.getPebblesIn();
+                temp.setPebblesIn(p + 1);
+                temp = temp.getSuccessor();
+
+            }
             i++;
         }
     }

@@ -110,10 +110,10 @@ import net.ulno.sa.Board;
          if(i>0 && i<7){
             this.pitsIHave.get(i-1).setSuccessor(this.pitsIHave.last());
          }
-         this.pitsIHave.get(i).withPlayerIBelongTo(this);
 
       }
 
+      this.pitsIHave.withPlayerIBelongTo(this);
 
       return board;
    }
