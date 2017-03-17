@@ -352,7 +352,8 @@ import net.ulno.sa.util.PitSet;
          }
          
          this.successor = value;
-
+         //Commented this because otherwise it only two
+         // pits can have a successor.
 //         if (value != null)
 //         {
 //            value.withSuccessor(this);

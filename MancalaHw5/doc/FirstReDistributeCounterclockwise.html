@@ -16,8 +16,14 @@
      
 Pre-condition: Game initial state, this is first move.
      
-Post-condition: Sal has 1 pebble in his Kalah. Ash has 5 pebbles in his first 3 pits
-     Scenario:     First player Sal's make his first move, selecting the pebbles from pit 5 to distribute.     Now, Sal's fifth pit will have no pebbles and four pits that follow the fifth pit, including     Sal's Kalah, has one extra pebble.</p>
+Post-condition: Sal has 1 pebble in his Kalah. Ash has 5 pebbles in his first 3 pits.
+     
+First player Sal's make his first move, selecting the pebbles from pit 5 to distribute.
+     
+Now, Sal's fifth pit will have no pebbles and four pits that follow the fifth pit, including
+     
+Sal's Kalah, has one extra pebble.
+</p>
 <script>
    var json = {
    "typ":"objectdiagram",
@@ -27,7 +33,7 @@ Post-condition: Sal has 1 pebble in his Kalah. Ash has 5 pebbles in his first 3 
          "id":"Sal : Player",
          "attributes":[
             "name=Sal",
-            "pebblesHolding=0"
+            "pebblesHolding=21"
          ]
       },
       {
@@ -95,7 +101,7 @@ Post-condition: Sal has 1 pebble in his Kalah. Ash has 5 pebbles in his first 3 
          "id":"Ash : Player",
          "attributes":[
             "name=Ash",
-            "pebblesHolding=0"
+            "pebblesHolding=27"
          ]
       },
       {

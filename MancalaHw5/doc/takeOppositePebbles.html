@@ -14,7 +14,7 @@
 <p>Storyboard <a href='.././src/test/java/test2.java' type='text/x-java'>takeOppositePebbles</a></p>
 <p>Test Two Scenario:
      
-Pre-condition: Players already made a move, this is 1st player first move.
+Pre-condition: Players already made a move, empty pit on Sal's side.
      
 Post-condition: First player's Kalah has more pebbles.
      
@@ -22,7 +22,8 @@ Player Sal's last pebble fell in an empty pit, so Sal takes pebbles from opposit
      
 Now Sal's fifth pit has zero pebbles and his Kalah has all of Ash's fifth pit pebbles and the last one he
      
-dropped on empty pit.</p>
+dropped on empty pit.
+</p>
 <script>
    var json = {
    "typ":"objectdiagram",
@@ -32,7 +33,7 @@ dropped on empty pit.</p>
          "id":"Sal : Player",
          "attributes":[
             "name=Sal",
-            "pebblesHolding=0"
+            "pebblesHolding=26"
          ]
       },
       {
@@ -87,7 +88,7 @@ dropped on empty pit.</p>
          "typ":"clazz",
          "id":"P7 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=6",
             "isKalah=true"
          ]
       },
@@ -100,7 +101,7 @@ dropped on empty pit.</p>
          "id":"Ash : Player",
          "attributes":[
             "name=Ash",
-            "pebblesHolding=0"
+            "pebblesHolding=22"
          ]
       },
       {
@@ -115,7 +116,7 @@ dropped on empty pit.</p>
          "typ":"clazz",
          "id":"P9 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -123,7 +124,7 @@ dropped on empty pit.</p>
          "typ":"clazz",
          "id":"P10 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },

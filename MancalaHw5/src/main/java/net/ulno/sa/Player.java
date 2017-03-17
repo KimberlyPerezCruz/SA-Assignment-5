@@ -82,21 +82,23 @@ import net.ulno.sa.Board;
    	return true;
    }
 
-   
-
 
    public Board createPlayer(Board board)
    {
-//      Board value = new Board();
-//      withPlayer(board);
+         /*
+          * Don't really need board here for anything,
+          * Did't want to change it because I didn't
+          * want to make a changes that could affect other code
+          * that I am not working on, but can erase the parameter
+          * board and return void instead.
+          */
 
-      // Same implementation as hw4 made it work for this version. This creates the pits.
+      // Same implementation as hw4 made it work for this version.
+      // This creates the pits, assigns successor and a player.
       this.name = name;
       this.pebblesHolding = 0;
       this.pitsIHave = new PitSet();
       for(int i = 0; i < 7; i++){
-
-
          if(i==6){
             this.pitsIHave.add(i, new Pit());
             this.pitsIHave.get(i).setPebblesIn(0);
@@ -108,23 +110,15 @@ import net.ulno.sa.Board;
             this.pitsIHave.get(i).setIsKalah(false);
          }
          if(i>0 && i<7){
+            // Adding a successor most pits.
             this.pitsIHave.get(i-1).setSuccessor(this.pitsIHave.last());
          }
-
       }
-
+      //Adding a player to every pit.
       this.pitsIHave.withPlayerIBelongTo(this);
-
+      this.setPebblesHolding(24);//4 pebbles in all 6 pits
       return board;
    }
-
-
-
-
-
-
-
-   
 
 
    

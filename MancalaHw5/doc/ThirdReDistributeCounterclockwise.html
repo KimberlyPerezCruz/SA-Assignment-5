@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="includes/diagramstyle.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="includes/dagre.min.js"></script>
+<script src="includes/drawer.js"></script>
+<script src="includes/graph.js"></script>
+</head><body>
+<p>Storyboard <a href='.././src/test/java/test5.java' type='text/x-java'>ThirdReDistributeCounterclockwise</a></p>
+<p>Test five Scenario:
+     
+Pre-condition: Sal make a moves and leave an empty pit.
+     
+Post-condition: Ash would have distributed hit pebbles and finish his move,      
+5 in his last landing pit and 0 in his starting pit.
+     
+Player Ash will make a move his last pebble lands on an none empty pit,
+     
+but opposite pit does not have any pebbles. This will end Ash's move.
+</p>
+<script>
+   var json = {
+   "typ":"objectdiagram",
+   "nodes":[
+      {
+         "typ":"clazz",
+         "id":"Sal : Player",
+         "attributes":[
+            "name=Sal",
+            "pebblesHolding=24"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P1 : Pit",
+         "attributes":[
+            "pebblesIn=4",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P2 : Pit",
+         "attributes":[
+            "pebblesIn=0",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P3 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P4 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P5 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P6 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P7 : Pit",
+         "attributes":[
+            "pebblesIn=0",
+            "isKalah=true"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"board : Board"
+      },
+      {
+         "typ":"clazz",
+         "id":"Ash : Player",
+         "attributes":[
+            "name=Ash",
+            "pebblesHolding=24"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P8 : Pit",
+         "attributes":[
+            "pebblesIn=0",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P9 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P10 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P11 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P12 : Pit",
+         "attributes":[
+            "pebblesIn=5",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P13 : Pit",
+         "attributes":[
+            "pebblesIn=4",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
+         "id":"P14 : Pit",
+         "attributes":[
+            "pebblesIn=0",
+            "isKalah=true"
+         ]
+      }
+   ],
+   "edges":[
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P1 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P2 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P3 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P4 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P5 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P6 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P7 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"one",
+            "property":"board",
+            "id":"board : Board"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"players",
+            "id":"Sal : Player"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P2 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P1 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P3 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P2 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P4 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P3 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P5 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P4 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P6 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P5 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P7 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P6 : Pit"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"players",
+            "id":"Ash : Player"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"board",
+            "id":"board : Board"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P8 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Ash : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P9 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Ash : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P10 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Ash : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P11 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Ash : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P12 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Ash : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P13 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Ash : Player"
+         }
+      },
+      {
+         "typ":"ASSOCIATION",
+         "source":{
+            "cardinality":"many",
+            "property":"pitsIHave",
+            "id":"P14 : Pit"
+         },
+         "target":{
+            "cardinality":"many",
+            "property":"playerIBelongTo",
+            "id":"Ash : Player"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P9 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P8 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P10 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P9 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P11 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P10 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P12 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P11 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P13 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P12 : Pit"
+         }
+      },
+      {
+         "typ":"UNDIRECTIONAL",
+         "source":{
+            "cardinality":"one",
+            "property":"successor",
+            "id":"P14 : Pit"
+         },
+         "target":{
+            "cardinality":"one",
+            "property":"pit",
+            "id":"P13 : Pit"
+         }
+      }
+   ]
+}   ;
+   json["options"]={"canvasid":"canvasThirdReDistributeCounterclockwise2", "display":"svg", "fontsize":10,"bar":true};   var g = new Graph(json);
+   g.layout(100,100);
+</script>
+
+</body>
+</html>
