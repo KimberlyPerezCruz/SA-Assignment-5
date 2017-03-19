@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BoardController">
+    <!-- TODO Add Nodes -->
+    <children>
+        <VBox layoutX="0.0" layoutY="0.0" prefHeight="300.0" prefWidth="500.0">
+            <children>
+                <HBox prefHeight="35.0" prefWidth="500.0">
+                    <children>
+                        <Label prefHeight="31.0" prefWidth="75.0" text="Player 1:">
+                            <font>
+                                <Font name="Microsoft JhengHei UI" size="15.0" fx:id="x1" />
+                            </font>
+                        </Label>
+                        <Label fx:id="player1" prefHeight="27.0" prefWidth="174.0" text="PLACEHOLDER">
+                            <font>
+                                <Font size="18.0" fx:id="x2" />
+                            </font>
+                        </Label>
+                        <Label font="$x1" prefHeight="28.0" prefWidth="65.0" text="Player 2:">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="player2" font="$x2" prefHeight="34.0" prefWidth="172.0" text="PLACEHOLDER" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="0.0" prefWidth="500.0">
+                    <children>
+                        <Label alignment="CENTER" text="Current Player:" HBox.hgrow="ALWAYS" />
+                  <Label fx:id="currentPlayer" text=" Current Player" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="171.0" prefWidth="500.0">
+                    <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <ImageView fitHeight="171.0" fitWidth="500.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+                                    <image>
+                                        <Image url="@../../../sample/board.png" />
+                                    </image>
+                                </ImageView>
+                                <HBox layoutX="0.0" layoutY="0.0" opacity="0.56" prefHeight="171.0" prefWidth="500.0">
+                                    <children>
+                                        <HBox maxWidth="70.0" prefHeight="171.0" prefWidth="56.0" style=" -fx-background-color: #1d1d1d;&#10;">
+                                            <children>
+                                                <Label fx:id="pit14" alignment="CENTER" onMouseClicked="#handleButtonClick" text="0" textAlignment="JUSTIFY" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                                    <font>
+                                                        <Font size="36.0" />
+                                                    </font>
+                                                    <HBox.margin>
+                                                        <Insets left="21.0" top="63.0" />
+                                                    </HBox.margin>
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <VBox prefHeight="171.0" prefWidth="392.0" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <HBox prefHeight="85.0" prefWidth="387.0" style=" -fx-background-color: #1e5799;" VBox.vgrow="ALWAYS">
+                                                            <children>
+                                                                <Label fx:id="pit13" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="17.0" top="10.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit12" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="45.0" top="10.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit11" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="45.0" top="10.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit10" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="43.0" top="10.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit9" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="45.0" top="10.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit8" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="45.0" top="10.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                            </children></HBox>
+                                                        <HBox prefHeight="100.0" prefWidth="200.0" style=" -fx-background-color: #a90329;&#10;" VBox.vgrow="ALWAYS">
+                                                            <children>
+                                                                <Label fx:id="pit1" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="17.0" top="36.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit2" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="45.0" top="36.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit3" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="45.0" top="36.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit4" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="44.0" top="36.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit5" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="42.0" top="36.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                                <Label fx:id="pit6" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                                    <font>
+                                                                        <Font size="36.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets left="45.0" top="36.0" />
+                                                                    </HBox.margin>
+                                                                </Label>
+                                                            </children></HBox>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                        <HBox maxWidth="70.0" prefHeight="171.0" prefWidth="57.0" style=" -fx-background-color: #1d1d1d;&#10;">
+                                            <children>
+                                                <Label fx:id="pit7" onMouseClicked="#handleButtonClick" text="0" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="36.0" />
+                                                    </font>
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" top="62.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children></HBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Button font="$x1" mnemonicParsing="false" onMouseClicked="#onBack" text="Back to Main Menu">
+                            <HBox.margin>
+                                <Insets right="10.0" fx:id="x3" />
+                            </HBox.margin>
+                        </Button>
+                        <Button font="$x1" mnemonicParsing="false" onMouseClicked="#onCancel" text="Quit Game" HBox.margin="$x3" />
+                        <Button font="$x1" mnemonicParsing="false" onMouseClicked="#onHelp" text="Help" />
+
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

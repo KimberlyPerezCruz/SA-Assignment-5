@@ -43,7 +43,7 @@ public class test2 {
 
         // Making the move
         int p1PebblesinKalah = p1.getPitsIHave().get(6).getPebblesIn();
-        int p2Pebblesinfifth = p2.getPitsIHave().get(5).getPebblesIn();
+        int p2Pebblesinfifth = p2.getPitsIHave().get(1).getPebblesIn();
         board.takeOppositePebbles(p1, p2, 5);
 
         //Asserting Post-condition: First player's Kalah has more pebbles.

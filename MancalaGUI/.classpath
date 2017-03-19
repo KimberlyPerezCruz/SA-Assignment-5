@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/kimberly_93pc/Documents/Sring2017/SWE443/SAStudyRightByHand-master/caches/modules-2/files-2.1/de.uniks/NetworkParser/4.4.311/2ed0c53eeed3d9314b6350d134c8abdda779b8fe/NetworkParser-4.4.311-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/kimberly_93pc/Documents/Sring2017/SWE443/SAStudyRightByHand-master/caches/modules-2/files-2.1/org.sdmlib/SDMLib/2.2.1094/909ed2dd2b7270c74a5e807d01e506cd7289dbc6/SDMLib-2.2.1094-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/kimberly_93pc/Documents/Sring2017/SWE443/SAStudyRightByHand-master/caches/modules-2/files-2.1/org.sdmlib/SDMLib/2.2.1094/8e2f083c614bec80eaf568987c489eb865ad3125/SDMLib-2.2.1094.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

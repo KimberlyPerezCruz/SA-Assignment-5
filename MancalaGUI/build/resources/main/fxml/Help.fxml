@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="Board" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: board.png;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+      <Label prefHeight="27.0" prefWidth="600.0" text="Mancala:Game for two players. Played on board called Kalah with 38 pebbles." />
+      <Label prefHeight="13.0" prefWidth="597.0" text="               The game is currenty set with 4 pebbles in each pit. There are 6 pits for each player" />
+      <Label prefHeight="21.0" prefWidth="600.0" text="               plus a pit called Kalah, one for each player. Game starts when first player takes pebbles" />
+      <Label prefHeight="19.0" prefWidth="600.0" text="               from any pit from his side of the board and redistributes them. If the last pebble falls in" />
+      <Label prefHeight="17.0" prefWidth="599.0" text="               the player's Kalah, then the player gets another turn. If the last pebble falls in an empty" />
+      <Label prefHeight="17.0" prefWidth="598.0" text="               and if the oppisite pit has pebbles, the player making the move gets all of the pebbles in" />
+      <Label prefHeight="17.0" prefWidth="597.0" text="               the opposite pit plus the last one he dropped, to his Kalah. Game ends when all pits" />
+      <Label prefHeight="17.0" prefWidth="597.0" text="               of one side of the board has no pebbles and the winner is the player with more pebbles" />
+      <Label prefHeight="22.0" prefWidth="592.0" text="               in his Kalah." />
+        <HBox prefHeight="71.0" prefWidth="600.0">
+            <children>
+                <Button id="back" mnemonicParsing="false" onMouseClicked="#onBack" prefHeight="27.0" prefWidth="164.0" text="Back to Main Menu" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

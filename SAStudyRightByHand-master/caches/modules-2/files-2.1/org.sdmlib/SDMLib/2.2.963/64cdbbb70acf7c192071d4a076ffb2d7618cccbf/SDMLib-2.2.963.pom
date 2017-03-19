@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.sdmlib</groupId>
+  <artifactId>SDMLib</artifactId>
+  <version>2.2.963</version>
+  <name>SDMLib</name>
+  <description>SDMLib is a light weight modeling library. SDMLib intentionally comes without any tool or editor.</description>
+  <url>https://github.com/fujaba/SDMLib</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>zuendorf</id>
+      <name>Albert Zuendorf</name>
+    </developer>
+    <developer>
+      <id>slin</id>
+      <name>Stefan Lindel</name>
+    </developer>
+    <developer>
+      <id>smu</id>
+      <name>Sascha Mueller</name>
+    </developer>
+    <developer>
+      <id>cre</id>
+      <name>Christian Repik</name>
+    </developer>
+    <developer>
+      <id>ajahl</id>
+      <name>Alexander Jahl</name>
+    </developer>
+    <developer>
+      <id>tge</id>
+      <name>Tobias George</name>
+    </developer>
+    <developer>
+      <id>cei</id>
+      <name>Christoph Eickhoff</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:fujaba/SDMLib.git</connection>
+    <developerConnection>scm:git@github.com:fujaba/SDMLib.git</developerConnection>
+    <url>scm:git@github.com:fujaba/SDMLib.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>de.uniks</groupId>
+      <artifactId>NetworkParser</artifactId>
+      <version>[4.2,)</version>
+      <classifier>sources</classifier>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

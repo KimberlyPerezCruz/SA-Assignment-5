@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test6" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-17T20:13:30" hostname="Kimberly-Perezs-MacBook-Pro.local" time="0.218">
-  <properties/>
-  <testcase name="FourthReDistributeCounterclockwise" classname="test6" time="0.218"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
