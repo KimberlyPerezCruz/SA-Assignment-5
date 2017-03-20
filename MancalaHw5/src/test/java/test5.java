@@ -15,10 +15,11 @@ public class test5 {
          *  Player Ash will make a move his last pebble lands on an none empty pit,
          *  but opposite pit does not have any pebbles. This will end Ash's move.
  * @see <a href='../../../doc/ThirdReDistributeCounterclockwise.html'>ThirdReDistributeCounterclockwise.html</a>
+ * @see <a href='../../../doc/FourthReDistributeCounterclockwise.html'>FourthReDistributeCounterclockwise.html</a>
  */
 
     @Test
-    public void ThirdReDistributeCounterclockwise() throws Exception {
+    public void FourthReDistributeCounterclockwise() throws Exception {
         Storyboard storyboard = new Storyboard();
 
         //Creating Players, also creates the pits with 4 pebbles each.

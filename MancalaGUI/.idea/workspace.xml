@@ -2,34 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/libraries/Gradle__junit_junit_4_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/libraries/Gradle__org_sdmlib_SDMLib_2_2_1094.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/classes/test6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/TEST-test6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/classes/test5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/TEST-test5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/ThirdReDistributeCounterclockwise.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/main/net/ulno/sa/Board.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/main/net/ulno/sa/Board.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/main/net/ulno/sa/util/BoardPO.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/main/net/ulno/sa/util/BoardPO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test1.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test2.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test3.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test4.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test5.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test6.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin.idx" afterPath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin.idx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/results.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/libraries/Gradle__de_uniks_NetworkParser_sources_4_4_311.xml" afterPath="$PROJECT_DIR$/../MancalaHw5/.idea/libraries/Gradle__de_uniks_NetworkParser_sources_4_4_311.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/misc.xml" afterPath="$PROJECT_DIR$/../MancalaHw5/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/modules/MancalaHw5.iml" afterPath="$PROJECT_DIR$/../MancalaHw5/.idea/modules/MancalaHw5.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/modules/MancalaHw5_main.iml" afterPath="$PROJECT_DIR$/../MancalaHw5/.idea/modules/MancalaHw5_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/modules/MancalaHw5_test.iml" afterPath="$PROJECT_DIR$/../MancalaHw5/.idea/modules/MancalaHw5_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../MancalaHw5/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/packages/default-package.html" afterPath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/packages/default-package.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/FirstReDistributeCounterclockwise.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/FirstReDistributeCounterclockwise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/FourthReDistributeCounterclockwise.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/FourthReDistributeCounterclockwise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/SecondReDistributeCounterclockwise.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/SecondReDistributeCounterclockwise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/refs.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/refs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/takeOppositePebbles.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/takeOppositePebbles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/main/java/net/ulno/sa/Board.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/main/java/net/ulno/sa/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test2.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test4.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test5.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test5.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test6.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test6.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,8 +103,8 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/sa/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="68" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -115,12 +113,9 @@
       <file leaf-file-name="BoardController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="3255">
               <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3663#3676#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,7 +123,7 @@
       <file leaf-file-name="Pit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/sa/Pit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="4380">
               <caret line="322" column="28" lean-forward="false" selection-start-line="322" selection-start-column="28" selection-end-line="322" selection-end-column="28" />
               <folding />
             </state>
@@ -138,7 +133,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="165">
               <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,7 +147,7 @@
       <file leaf-file-name="Menu.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Menu.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="225">
               <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
@@ -165,12 +160,9 @@
       <file leaf-file-name="Board.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Board.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="587">
+            <state relative-caret-position="3090">
               <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-              <folding>
-                <marker date="1489898678000" expanded="true" signature="14917:16502" ph="..." />
-                <marker date="1489898678000" expanded="true" signature="14947:15424" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
@@ -183,11 +175,7 @@
           <provider editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <marker date="1489894295000" expanded="true" signature="558:1925" ph="..." />
-                <marker date="1489894295000" expanded="true" signature="1525:1640" ph="..." />
-                <marker date="1489894295000" expanded="true" signature="1901:1917" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
@@ -199,11 +187,8 @@
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="33" column="84" lean-forward="true" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-              <folding>
-                <element signature="e#1248#1265#0" expanded="true" />
-                <element signature="e#1708#1721#0" expanded="true" />
-              </folding>
+              <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -516,6 +501,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -592,22 +578,9 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fxml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -999,7 +972,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20840065" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21163167" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1089,9 +1062,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#1248#1265#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,33 +1070,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3663#3676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Help.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="70" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-          <folding>
-            <marker date="1489894295000" expanded="true" signature="558:1925" ph="..." />
-            <marker date="1489894295000" expanded="true" signature="1525:1640" ph="..." />
-            <marker date="1489894295000" expanded="true" signature="1901:1917" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
@@ -1148,45 +1102,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#1248#1265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/Main.class" />
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#1248#1265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
     <entry file="file://$PROJECT_DIR$/MancalaGUI.iml" />
     <entry file="file://$PROJECT_DIR$/src/sample/Game.xsl" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/javafx-src.zip!/javafx/application/Application.java">
@@ -1317,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,21 +1263,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
     <entry file="jar://$PROJECT_DIR$/../SAStudyRightByHand-master/caches/modules-2/files-2.1/de.uniks/NetworkParser/4.4.311/2ed0c53eeed3d9314b6350d134c8abdda779b8fe/NetworkParser-4.4.311-sources.jar!/de/uniks/networkparser/list/AbstractArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1367,26 +1285,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/GameEnd.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/GameEnd.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Help.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <marker date="1489894295000" expanded="true" signature="558:1925" ph="..." />
-            <marker date="1489894295000" expanded="true" signature="1525:1640" ph="..." />
-            <marker date="1489894295000" expanded="true" signature="1901:1917" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
@@ -1395,12 +1299,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Board.fxml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="587">
+        <state relative-caret-position="3090">
           <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-          <folding>
-            <marker date="1489898678000" expanded="true" signature="14917:16502" ph="..." />
-            <marker date="1489898678000" expanded="true" signature="14947:15424" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
@@ -1409,7 +1310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sa/Pit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="4380">
           <caret line="322" column="28" lean-forward="false" selection-start-line="322" selection-start-column="28" selection-end-line="322" selection-end-column="28" />
           <folding />
         </state>
@@ -1419,9 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="1657" column="0" lean-forward="false" selection-start-line="1657" selection-start-column="0" selection-end-line="1657" selection-end-column="0" />
-          <folding>
-            <element signature="e#66921#66922#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1429,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1437,16 +1334,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="2494" column="0" lean-forward="false" selection-start-line="2494" selection-start-column="0" selection-end-line="2494" selection-end-column="0" />
-          <folding>
-            <element signature="e#66617#66618#0" expanded="false" />
-            <element signature="e#66663#66664#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Menu.fxml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="225">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
@@ -1457,7 +1350,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="165">
           <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1469,23 +1362,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="3255">
           <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3663#3676#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="33" column="84" lean-forward="true" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-          <folding>
-            <element signature="e#1248#1265#0" expanded="true" />
-            <element signature="e#1708#1721#0" expanded="true" />
-          </folding>
+          <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1499,8 +1386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sa/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="68" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+        <state relative-caret-position="660">
+          <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
           <folding />
         </state>
       </provider>

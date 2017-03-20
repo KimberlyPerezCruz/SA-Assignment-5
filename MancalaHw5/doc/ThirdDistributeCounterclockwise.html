@@ -11,17 +11,16 @@
 <script src="includes/drawer.js"></script>
 <script src="includes/graph.js"></script>
 </head><body>
-<p>Storyboard <a href='.././src/test/java/test5.java' type='text/x-java'>ThirdReDistributeCounterclockwise</a></p>
-<p>Test five Scenario:
+<p>Storyboard <a href='.././src/test/java/test4.java' type='text/x-java'>ThirdDistributeCounterclockwise</a></p>
+<p>Test four Scenario:
      
-Pre-condition: Sal make a moves and leave an empty pit.
+Pre-condition: Sal & Ash both make a moves and leave an empty pit opposite to each other.
      
-Post-condition: Ash would have distributed hit pebbles and finish his move,      
-5 in his last landing pit and 0 in his starting pit.
+Post-condition: Ash's pebbles are distributed, last one lands on empty pit in both sides of board.
      
-Player Ash will make a move his last pebble lands on an none empty pit,
+Player Ash will make a move, but his last pebble lands on an empty pit on both side of board.
      
-but opposite pit does not have any pebbles. This will end Ash's move.
+This will end Ash's move.
 </p>
 <script>
    var json = {
@@ -32,20 +31,12 @@ but opposite pit does not have any pebbles. This will end Ash's move.
          "id":"Sal : Player",
          "attributes":[
             "name=Sal",
-            "pebblesHolding=24"
+            "pebblesHolding=27"
          ]
       },
       {
          "typ":"clazz",
          "id":"P1 : Pit",
-         "attributes":[
-            "pebblesIn=4",
-            "isKalah=false"
-         ]
-      },
-      {
-         "typ":"clazz",
-         "id":"P2 : Pit",
          "attributes":[
             "pebblesIn=0",
             "isKalah=false"
@@ -53,9 +44,17 @@ but opposite pit does not have any pebbles. This will end Ash's move.
       },
       {
          "typ":"clazz",
+         "id":"P2 : Pit",
+         "attributes":[
+            "pebblesIn=6",
+            "isKalah=false"
+         ]
+      },
+      {
+         "typ":"clazz",
          "id":"P3 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=6",
             "isKalah=false"
          ]
       },
@@ -100,14 +99,14 @@ but opposite pit does not have any pebbles. This will end Ash's move.
          "id":"Ash : Player",
          "attributes":[
             "name=Ash",
-            "pebblesHolding=24"
+            "pebblesHolding=21"
          ]
       },
       {
          "typ":"clazz",
          "id":"P8 : Pit",
          "attributes":[
-            "pebblesIn=0",
+            "pebblesIn=4",
             "isKalah=false"
          ]
       },
@@ -115,7 +114,7 @@ but opposite pit does not have any pebbles. This will end Ash's move.
          "typ":"clazz",
          "id":"P9 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=0",
             "isKalah=false"
          ]
       },
@@ -147,7 +146,7 @@ but opposite pit does not have any pebbles. This will end Ash's move.
          "typ":"clazz",
          "id":"P13 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=1",
             "isKalah=false"
          ]
       },
@@ -155,7 +154,7 @@ but opposite pit does not have any pebbles. This will end Ash's move.
          "typ":"clazz",
          "id":"P14 : Pit",
          "attributes":[
-            "pebblesIn=0",
+            "pebblesIn=1",
             "isKalah=true"
          ]
       }
@@ -527,7 +526,7 @@ but opposite pit does not have any pebbles. This will end Ash's move.
       }
    ]
 }   ;
-   json["options"]={"canvasid":"canvasThirdReDistributeCounterclockwise2", "display":"svg", "fontsize":10,"bar":true};   var g = new Graph(json);
+   json["options"]={"canvasid":"canvasThirdDistributeCounterclockwise2", "display":"svg", "fontsize":10,"bar":true};   var g = new Graph(json);
    g.layout(100,100);
 </script>
 
