@@ -18,4 +18,5 @@ It is due on 2017-03-07 8:50am EST
   live graded. Your team needs to allocate a 15min slot outside of class with me to present the project to
   me to get the grade.
 
-**Still working on explanation of how to execute test, find diagrams (models), run GUI. 
+**Still working on explanation of how to execute test, find diagrams (models), run GUI.
+**Also mock ups. 
