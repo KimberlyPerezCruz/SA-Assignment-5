@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MancalaHw5.iml" filepath="$PROJECT_DIR$/.idea/modules/MancalaHw5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MancalaHw5_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MancalaHw5_main.iml" group="MancalaHw5" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MancalaHw5_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MancalaHw5_test.iml" group="MancalaHw5" />
     </modules>
   </component>
 </project>
