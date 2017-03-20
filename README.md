@@ -17,3 +17,5 @@ It is due on 2017-03-07 8:50am EST
   Submit the git repository link or zipped project with instructions how to run it. This project needs to be
   live graded. Your team needs to allocate a 15min slot outside of class with me to present the project to
   me to get the grade.
+
+**Still working on explanation of how to execute test, find diagrams (models), run GUI. 
