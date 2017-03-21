@@ -38,4 +38,3 @@ It is due on 2017-03-07 8:50am EST
 * To view Mock-Ups:
  - Navigate to SA-Assignment-5
  - command: open MancalaMockUps.pdf
-- 
