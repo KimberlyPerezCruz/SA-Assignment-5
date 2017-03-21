@@ -17,9 +17,10 @@ public class test6 {
      *  He selects his pit 4 and another pebbles lands on his Kalah, but it is not the last one so he
      *  does not get another extra move.
  * @see <a href='../../../doc/FourthReDistributeCounterclockwise.html'>FourthReDistributeCounterclockwise.html</a>
+ * @see <a href='../../../doc/FifthReDistributeCounterclockwise.html'>FifthReDistributeCounterclockwise.html</a>
  */
     @Test
-    public void FourthReDistributeCounterclockwise() throws Exception {
+    public void FifthReDistributeCounterclockwise() throws Exception {
         Storyboard storyboard = new Storyboard();
 
         //Creating Players, also creates the pits with 4 pebbles each.

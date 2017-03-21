@@ -12,10 +12,11 @@ public class test4 {
      *  Post-condition: Ash's pebbles are distributed, last one lands on empty pit in both sides of board.
      *  Player Ash will make a move, but his last pebble lands on an empty pit. This will end Ash's move.
  * @see <a href='../../../doc/SecondReDistributeCounterclockwise.html'>SecondReDistributeCounterclockwise.html</a>
+ * @see <a href='../../../doc/ThirdDistributeCounterclockwise.html'>ThirdDistributeCounterclockwise.html</a>
  */
 
     @Test
-    public void SecondReDistributeCounterclockwise() throws Exception {
+    public void ThirdDistributeCounterclockwise() throws Exception {
         Storyboard storyboard = new Storyboard();
 
         //Creating Players, also creates the pits with 4 pebbles each.

@@ -11,19 +11,17 @@
 <script src="includes/drawer.js"></script>
 <script src="includes/graph.js"></script>
 </head><body>
-<p>Storyboard <a href='.././src/test/java/test6.java' type='text/x-java'>FourthReDistributeCounterclockwise</a></p>
-<p>Test six Scenario:
+<p>Storyboard <a href='.././src/test/java/test5.java' type='text/x-java'>FourthReDistributeCounterclockwise</a></p>
+<p>Test five Scenario:
      
-Pre-condition: Sal's last pebble landed on his Kalah.
+Pre-condition: Sal make a moves and leave an empty pit.
      
-Post-condition: His Kalah has one extra pebble and Sal has one extra move.      
-Player Sal will make a move his last pebble lands on his Kalah, this will
+Post-condition: Ash would have distributed hit pebbles and finish his move,      
+5 in his last landing pit and 0 in his starting pit.
      
-add one more pebble to his Kalah and one more extra move to select any pit
+Player Ash will make a move his last pebble lands on an none empty pit,
      
-he wants to redistribute. He selects his pit 4 and another pebbles lands on his Kalah,
-     
-but it is not the last one so he does not get another extra move.
+but opposite pit does not have any pebbles. This will end Ash's move.
 </p>
 <script>
    var json = {
@@ -34,7 +32,7 @@ but it is not the last one so he does not get another extra move.
          "id":"Sal : Player",
          "attributes":[
             "name=Sal",
-            "pebblesHolding=22"
+            "pebblesHolding=24"
          ]
       },
       {
@@ -49,7 +47,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P2 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=0",
             "isKalah=false"
          ]
       },
@@ -57,7 +55,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P3 : Pit",
          "attributes":[
-            "pebblesIn=0",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -65,7 +63,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P4 : Pit",
          "attributes":[
-            "pebblesIn=0",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -73,7 +71,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P5 : Pit",
          "attributes":[
-            "pebblesIn=6",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -81,7 +79,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P6 : Pit",
          "attributes":[
-            "pebblesIn=6",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -89,7 +87,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P7 : Pit",
          "attributes":[
-            "pebblesIn=2",
+            "pebblesIn=0",
             "isKalah=true"
          ]
       },
@@ -102,14 +100,14 @@ but it is not the last one so he does not get another extra move.
          "id":"Ash : Player",
          "attributes":[
             "name=Ash",
-            "pebblesHolding=26"
+            "pebblesHolding=24"
          ]
       },
       {
          "typ":"clazz",
          "id":"P8 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=0",
             "isKalah=false"
          ]
       },
@@ -125,7 +123,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P10 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -133,7 +131,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P11 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -141,7 +139,7 @@ but it is not the last one so he does not get another extra move.
          "typ":"clazz",
          "id":"P12 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },

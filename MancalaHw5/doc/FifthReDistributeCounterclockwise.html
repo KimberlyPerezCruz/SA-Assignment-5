@@ -11,13 +11,20 @@
 <script src="includes/drawer.js"></script>
 <script src="includes/graph.js"></script>
 </head><body>
-<p>Storyboard <a href='.././src/test/java/test3.java' type='text/x-java'>SecondReDistributeCounterclockwise</a></p>
-<p>Test three Scenario:
+<p>Storyboard <a href='.././src/test/java/test6.java' type='text/x-java'>FifthReDistributeCounterclockwise</a></p>
+<p>Test six Scenario:
      
-Pre-condition: Game initial state, this is first move.
+Pre-condition: Sal's last pebble landed on his Kalah.
      
-Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble in them
-     Scenario:     Second player Ash makes her first move, selecting the pebbles from pit 1 to distribute.     Now, Ash's pit 1 will have no pebbles and four pits that follow the second pit,      have one extra pebble.</p>
+Post-condition: His Kalah has one extra pebble and Sal has one extra move.      
+Player Sal will make a move his last pebble lands on his Kalah, this will
+     
+add one more pebble to his Kalah and one more extra move to select any pit
+     
+he wants to redistribute. He selects his pit 4 and another pebbles lands on his Kalah,
+     
+but it is not the last one so he does not get another extra move.
+</p>
 <script>
    var json = {
    "typ":"objectdiagram",
@@ -27,7 +34,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "id":"Sal : Player",
          "attributes":[
             "name=Sal",
-            "pebblesHolding=20"
+            "pebblesHolding=22"
          ]
       },
       {
@@ -50,7 +57,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P3 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=0",
             "isKalah=false"
          ]
       },
@@ -58,7 +65,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P4 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=0",
             "isKalah=false"
          ]
       },
@@ -66,7 +73,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P5 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=6",
             "isKalah=false"
          ]
       },
@@ -74,7 +81,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P6 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=6",
             "isKalah=false"
          ]
       },
@@ -82,7 +89,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P7 : Pit",
          "attributes":[
-            "pebblesIn=0",
+            "pebblesIn=2",
             "isKalah=true"
          ]
       },
@@ -95,14 +102,14 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "id":"Ash : Player",
          "attributes":[
             "name=Ash",
-            "pebblesHolding=28"
+            "pebblesHolding=26"
          ]
       },
       {
          "typ":"clazz",
          "id":"P8 : Pit",
          "attributes":[
-            "pebblesIn=4",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -110,7 +117,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P9 : Pit",
          "attributes":[
-            "pebblesIn=0",
+            "pebblesIn=5",
             "isKalah=false"
          ]
       },
@@ -118,7 +125,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P10 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=4",
             "isKalah=false"
          ]
       },
@@ -126,7 +133,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P11 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=4",
             "isKalah=false"
          ]
       },
@@ -134,7 +141,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P12 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=4",
             "isKalah=false"
          ]
       },
@@ -142,7 +149,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
          "typ":"clazz",
          "id":"P13 : Pit",
          "attributes":[
-            "pebblesIn=5",
+            "pebblesIn=4",
             "isKalah=false"
          ]
       },
@@ -522,7 +529,7 @@ Post-condition: Ash has completed her turn. Ash's pits now have 1 extra pebble i
       }
    ]
 }   ;
-   json["options"]={"canvasid":"canvasSecondReDistributeCounterclockwise2", "display":"svg", "fontsize":10,"bar":true};   var g = new Graph(json);
+   json["options"]={"canvasid":"canvasFifthReDistributeCounterclockwise2", "display":"svg", "fontsize":10,"bar":true};   var g = new Graph(json);
    g.layout(100,100);
 </script>
 

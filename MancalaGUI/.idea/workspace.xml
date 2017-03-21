@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2d498a5c-3ba9-45e9-b7bf-34f4f244cf0b" name="Default" comment="" />
+=======
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/classes/test5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/TEST-test5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/ThirdReDistributeCounterclockwise.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test3.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test4.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test5.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test6.class" afterPath="$PROJECT_DIR$/../MancalaHw5/build/classes/test/test6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin.idx" afterPath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/output.bin.idx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/../MancalaHw5/build/test-results/test/binary/results.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../MancalaHw5/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/packages/default-package.html" afterPath="$PROJECT_DIR$/../MancalaHw5/build/reports/tests/test/packages/default-package.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/FirstReDistributeCounterclockwise.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/FirstReDistributeCounterclockwise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/FourthReDistributeCounterclockwise.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/FourthReDistributeCounterclockwise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/SecondReDistributeCounterclockwise.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/SecondReDistributeCounterclockwise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/refs.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/refs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/doc/takeOppositePebbles.html" afterPath="$PROJECT_DIR$/../MancalaHw5/doc/takeOppositePebbles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test4.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test5.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test5.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test6.java" afterPath="$PROJECT_DIR$/../MancalaHw5/src/test/java/test6.java" />
+    </list>
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -26,8 +59,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="240">
               <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+=======
+            <state relative-caret-position="660">
+              <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
               <folding />
             </state>
           </provider>
@@ -36,11 +74,77 @@
       <file leaf-file-name="BoardController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="120">
               <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="3255">
+              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/sa/Pit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4380">
+              <caret line="322" column="28" lean-forward="false" selection-start-line="322" selection-start-column="28" selection-end-line="322" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Menu.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Board.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="3090">
+              <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Help.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Help.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
             </state>
           </provider>
         </entry>
@@ -48,8 +152,23 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="30">
               <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+=======
+            <state relative-caret-position="405">
+              <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelpControl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/HelpControl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="50" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
               <folding />
             </state>
           </provider>
@@ -425,6 +544,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -482,6 +607,7 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -492,6 +618,11 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+          </PATH>
+        </subPane>
+      </pane>
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -762,8 +893,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21163167" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -792,13 +928,97 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="210">
+          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="390">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+=======
+        <state relative-caret-position="345">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Help.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="70" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Board.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.class" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.class" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
+    <entry file="file://$PROJECT_DIR$/MancalaGUI.iml" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Game.xsl" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/javafx-src.zip!/javafx/application/Application.java">
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
@@ -834,6 +1054,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -851,6 +1072,117 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/BoardCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/BoardPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/BoardPOCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/BoardSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PlayerCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="127" column="13" lean-forward="false" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PlayerSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5384">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PlayerPOCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PlayerPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3059">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PitCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="144" column="13" lean-forward="false" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PitPOCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sa/util/PitPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.class" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Menu.fxml" />
+    <entry file="jar://$PROJECT_DIR$/../SAStudyRightByHand-master/caches/modules-2/files-2.1/de.uniks/NetworkParser/4.4.311/2ed0c53eeed3d9314b6350d134c8abdda779b8fe/NetworkParser-4.4.311-sources.jar!/de/uniks/networkparser/list/AbstractArray.java">
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
@@ -868,32 +1200,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -909,27 +1216,66 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/GameEnd.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Help.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Board.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="3090">
+          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <folding />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="4380">
+          <caret line="322" column="28" lean-forward="false" selection-start-line="322" selection-start-column="28" selection-end-line="322" selection-end-column="28" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
+=======
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="1657" column="0" lean-forward="false" selection-start-line="1657" selection-start-column="0" selection-end-line="1657" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2205">
           <caret line="147" column="10" lean-forward="true" selection-start-line="147" selection-start-column="10" selection-end-line="147" selection-end-column="10" />
           <folding>
@@ -942,32 +1288,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="107">
+          <caret line="2494" column="0" lean-forward="false" selection-start-line="2494" selection-start-column="0" selection-end-line="2494" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Menu.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="45">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
+=======
+        <state relative-caret-position="165">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+          </folding>
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BoardController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="3255">
+          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="30">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+=======
+        <state relative-caret-position="405">
+          <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
           <folding />
         </state>
       </provider>
@@ -984,8 +1362,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="240">
           <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+=======
+        <state relative-caret-position="660">
+          <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+>>>>>>> 69e3d4024fb526767b1aeb99eafec5ef1df312c5
           <folding />
         </state>
       </provider>
